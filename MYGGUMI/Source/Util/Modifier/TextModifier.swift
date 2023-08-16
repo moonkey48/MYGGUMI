@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct TextModifier: ViewModifier {
+struct DescriptionModifier: ViewModifier {
     var fontSize: CGFloat = 18
+    var color: CustomColor = .white
     
     func body(content: Content) -> some View {
         content
-            .multilineTextAlignment(.center)
-            .foregroundColor(.textGray)
-            .padding(.bottom, 16)
+            .foregroundColor(Color(color))
+            .font(.system(size: fontSize))
             .lineSpacing(7)
     }
 }
