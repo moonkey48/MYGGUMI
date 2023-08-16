@@ -15,7 +15,7 @@
 		9581DDFA2A8CD9C400FAFA48 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDF92A8CD9C400FAFA48 /* LoginView.swift */; };
 		9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDFB2A8CD9E900FAFA48 /* BackgroundView.swift */; };
 		9581DE002A8CDD7800FAFA48 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDFF2A8CDD7800FAFA48 /* TextModifier.swift */; };
-		9581DE032A8CDDB200FAFA48 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DE022A8CDDB200FAFA48 /* Color.swift */; };
+		9581DE032A8CDDB200FAFA48 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DE022A8CDDB200FAFA48 /* ColorExtension.swift */; };
 		9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DE052A8CDF2300FAFA48 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,7 @@
 		9581DDF92A8CD9C400FAFA48 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9581DDFB2A8CD9E900FAFA48 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		9581DDFF2A8CDD7800FAFA48 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
-		9581DE022A8CDDB200FAFA48 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9581DE022A8CDDB200FAFA48 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		9581DE052A8CDF2300FAFA48 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,7 +207,7 @@
 		9581DE042A8CDDD800FAFA48 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				9581DE022A8CDDB200FAFA48 /* Color.swift */,
+				9581DE022A8CDDB200FAFA48 /* ColorExtension.swift */,
 				9581DE052A8CDF2300FAFA48 /* ViewExtension.swift */,
 			);
 			path = Extension;
@@ -290,7 +290,7 @@
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,
 				9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */,
-				9581DE032A8CDDB200FAFA48 /* Color.swift in Sources */,
+				9581DE032A8CDDB200FAFA48 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

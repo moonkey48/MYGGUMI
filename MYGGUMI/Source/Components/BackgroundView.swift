@@ -28,6 +28,7 @@ struct BackgroundView<Content: View>: View {
                         
                     content()
                 }
+                .ignoresSafeArea()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
