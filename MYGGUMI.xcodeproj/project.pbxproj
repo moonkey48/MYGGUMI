@@ -53,6 +53,8 @@
 			children = (
 				9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */,
 				9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */,
+				9581DDEC2A8CC4C800FAFA48 /* Source */,
+				9581DDEB2A8CC4A800FAFA48 /* Resource */,
 				9581DDDF2A8CC2F100FAFA48 /* Assets.xcassets */,
 				9581DDE12A8CC2F100FAFA48 /* Preview Content */,
 			);
@@ -65,6 +67,44 @@
 				9581DDE22A8CC2F100FAFA48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9581DDEB2A8CC4A800FAFA48 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9581DDEC2A8CC4C800FAFA48 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9581DDEF2A8CC4DF00FAFA48 /* Model */,
+				9581DDEE2A8CC4D600FAFA48 /* Observable */,
+				9581DDED2A8CC4D000FAFA48 /* View */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9581DDED2A8CC4D000FAFA48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9581DDEE2A8CC4D600FAFA48 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		9581DDEF2A8CC4DF00FAFA48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
