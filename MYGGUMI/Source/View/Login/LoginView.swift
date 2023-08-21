@@ -115,12 +115,11 @@ struct LoginView: View {
                             Text("다음")
                                 .description(.white, 23)
                         }
-                        .padding(.trailing, 80)
+                        .padding(.trailing, 40)
                     }
                 }
                 Spacer()
-                    .frame(height: 140)
-                
+                    .frame(height: 40)
             }
         }
         .onAppear {
@@ -137,9 +136,6 @@ struct LoginView: View {
             transitionOpacity = 0
         }
         loginState = changeTo
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-//            loginState = changeTo
-//        }
         withAnimation(.easeInOut(duration: 0.3).delay(0.1)){
             transitionOpacity = 1
         }

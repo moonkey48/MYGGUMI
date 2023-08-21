@@ -22,14 +22,15 @@ struct BackgroundView<Content: View>: View {
                 ZStack {
                     Image("mainBG")
                         .resizable()
-                        .scaledToFill()
                         .ignoresSafeArea()
-                        .frame(width: .infinity, height: .infinity)
+                        .scaledToFill()
+                        .frame(width: geo.size.width, height: geo.size.height)
+                        
+                        
                         
                     content()
                 }
-                .ignoresSafeArea()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .frame(width: geo.size.width, height: geo.size.height)
             }
         }
     }

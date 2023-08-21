@@ -17,6 +17,8 @@
 		9581DE002A8CDD7800FAFA48 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDFF2A8CDD7800FAFA48 /* TextModifier.swift */; };
 		9581DE032A8CDDB200FAFA48 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DE022A8CDDB200FAFA48 /* ColorExtension.swift */; };
 		9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DE052A8CDF2300FAFA48 /* ViewExtension.swift */; };
+		959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598626F2A937DCC0047E1D5 /* OnboardingView.swift */; };
+		959862732A9393A90047E1D5 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959862722A9393A90047E1D5 /* TutorialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		9581DDFF2A8CDD7800FAFA48 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
 		9581DE022A8CDDB200FAFA48 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		9581DE052A8CDF2300FAFA48 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		9598626F2A937DCC0047E1D5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		959862722A9393A90047E1D5 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		9581DDED2A8CC4D000FAFA48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				959862712A93939A0047E1D5 /* Tutorial */,
 				9581DDF42A8CC6BB00FAFA48 /* JobSpace */,
 				9581DDF32A8CC69F00FAFA48 /* Character */,
 				9581DDF22A8CC69400FAFA48 /* FindValue */,
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				9581DDF92A8CD9C400FAFA48 /* LoginView.swift */,
+				9598626F2A937DCC0047E1D5 /* OnboardingView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -213,6 +219,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		959862712A93939A0047E1D5 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				959862722A9393A90047E1D5 /* TutorialView.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,9 +300,11 @@
 			files = (
 				9581DDFA2A8CD9C400FAFA48 /* LoginView.swift in Sources */,
 				9581DE002A8CDD7800FAFA48 /* TextModifier.swift in Sources */,
+				959862732A9393A90047E1D5 /* TutorialView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,
+				959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */,
 				9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */,
 				9581DE032A8CDDB200FAFA48 /* ColorExtension.swift in Sources */,
 			);
