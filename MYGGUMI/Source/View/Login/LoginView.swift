@@ -46,7 +46,7 @@ struct LoginView: View {
     @State private var selectedGrade = ""
     @State private var selectedFriends: [Friend] = []
     @State private var transitionOpacity: Double = 1
-    @State private var loginState: LoginState = .friends
+    @State private var loginState: LoginState = .intro
     @State private var alertText = ""
     
     var body: some View {
@@ -60,7 +60,7 @@ struct LoginView: View {
                     case .start:
                         WelcomeView
                     case .name:
-                        AddFriendsView
+                        NameView
                     case .school:
                         SchoolView
                     case .friends:
@@ -123,22 +123,23 @@ struct LoginView: View {
                 
             }
         }
-//        .onAppear {
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                opacityTransition(.start)
-//            }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-//                opacityTransition(.name)
-//            }
-//        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                opacityTransition(.start)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                opacityTransition(.name)
+            }
+        }
     }
-    private func opacityTransition(_ changeTo:LoginState){
+    private func opacityTransition(_ changeTo: LoginState){
         withAnimation(.easeInOut(duration: 0.3)){
             transitionOpacity = 0
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-            loginState = changeTo
-        }
+        loginState = changeTo
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+//            loginState = changeTo
+//        }
         withAnimation(.easeInOut(duration: 0.3).delay(0.1)){
             transitionOpacity = 1
         }
@@ -196,46 +197,50 @@ extension LoginView {
     }
     
     private var AddFriendsView: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 25, style: .continuous)
-                .stroke(.white, lineWidth: 2)
-                .foregroundColor(.white.opacity(0))
-                .frame(width: 204, height: 204)
-            VStack(alignment: .leading, spacing: -15){
-                ForEach(friends, id: \.id) { friend in
-                    HStack(spacing: -5) {
-                        Image("\(friend.imageName)")
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(friend.name)
-                                .description(.white, 15)
-                            Text(friend.number)
-                                .description(.white, 11)
-                        }
-                        Spacer()
-                        Button {
-                            if selectedFriends.contains(where: { $0.id == friend.id }) {
-                                let deleteIndex = selectedFriends.firstIndex(where: { $0.id == friend.id}) ?? -1
-                                if deleteIndex != -1 {
-                                    self.selectedFriends.remove(at: selectedFriends.firstIndex(where: { $0.id == friend.id}) ?? 0)
+        VStack {
+            Text("친구 추가")
+                .description(.white, 23)
+                .padding(.bottom, 23)
+            ZStack {
+                RoundedRectangle(cornerRadius: 25, style: .continuous)
+                    .stroke(.white, lineWidth: 2)
+                    .foregroundColor(.white.opacity(0))
+                    .frame(width: 204, height: 204)
+                VStack(alignment: .leading, spacing: -15){
+                    ForEach(friends, id: \.id) { friend in
+                        HStack(spacing: -5) {
+                            Image("\(friend.imageName)")
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(friend.name)
+                                    .description(.white, 15)
+                                Text(friend.number)
+                                    .description(.white, 11)
+                            }
+                            Spacer()
+                            Button {
+                                if selectedFriends.contains(where: { $0.id == friend.id }) {
+                                    let deleteIndex = selectedFriends.firstIndex(where: { $0.id == friend.id}) ?? -1
+                                    if deleteIndex != -1 {
+                                        self.selectedFriends.remove(at: selectedFriends.firstIndex(where: { $0.id == friend.id}) ?? 0)
+                                    }
+                                } else {
+                                    self.selectedFriends.append(friend)
                                 }
-                            } else {
-                                self.selectedFriends.append(friend)
+                            } label: {
+                                if selectedFriends.contains(where: { $0.id == friend.id }) {
+                                    Image("loginSelected")
+                                } else {
+                                    Image("loginPlus")
+                                }
+                                
                             }
-                        } label: {
-                            if selectedFriends.contains(where: { $0.id == friend.id }) {
-                                Image("loginSelected")
-                            } else {
-                                Image("loginPlus")
-                            }
-                            
                         }
                     }
                 }
+                .padding(.trailing, 15)
             }
-            .padding(.trailing, 15)
+            .frame(width: 204, height: 204)
         }
-        .frame(width: 204, height: 204)
-        
     }
 }
 
