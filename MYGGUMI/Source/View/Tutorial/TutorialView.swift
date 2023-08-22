@@ -17,6 +17,7 @@ enum TutorialState: CaseIterable {
     case dreamButton
     case dream1
     case dream2
+    
     case shareButton
     case share1
     case missionButton
@@ -69,6 +70,14 @@ struct TutorialView: View {
                 FindValue2View
             case .praise1:
                 Praise1View
+            case .dream1:
+                Dream1View
+            case .dream2:
+                Dream2View
+            case .share1:
+                Share1View
+            case .mission1:
+                Mission1View
             default:
                 EmptyView()
             }
@@ -102,10 +111,25 @@ extension TutorialView {
                     .description(.white, 17)
             }
             // MARK: Dream
-            ZStack {
-                Image("main_gradient")
-                Text("나의 동사형 꿈")
-                    .description()
+            switch tutorialState {
+            case .dreamButton:
+                ZStack {
+                    Image("main_gradient")
+                    Text("나의 동사형 꿈")
+                        .description()
+                    Image("finger_up_right")
+                        .offset(x: -80, y: 50)
+                }
+                .onTapGesture {
+                    tutorialState = tutorialStateList[tutorialStateIndex + 1]
+                    tutorialStateIndex += 1
+                }
+            default:
+                ZStack {
+                    Image("main_gradient")
+                    Text("나의 동사형 꿈")
+                        .description()
+                }
             }
         }
     }
@@ -156,11 +180,37 @@ extension TutorialView {
     
     var CustomTabView: some View {
         HStack(spacing: -10) {
-            Image("icon_tab1")
+            switch tutorialState {
+            case .missionButton:
+                ZStack {
+                    Image("icon_tab1")
+                    Image("finger_down_left")
+                        .offset(x:40, y:-80)
+                }
+                .onTapGesture {
+                    tutorialState = tutorialStateList[tutorialStateIndex + 1]
+                    tutorialStateIndex += 1
+                }
+            default:
+                Image("icon_tab1")
+            }
             Image("icon_tab2")
             Image("icon_tab3")
             Image("icon_tab4")
-            Image("icon_tab5")
+            switch tutorialState {
+            case .shareButton:
+                ZStack {
+                    Image("icon_tab5")
+                    Image("finter_down_right")
+                        .offset(x:-30, y:-80)
+                }
+                .onTapGesture {
+                    tutorialState = tutorialStateList[tutorialStateIndex + 1]
+                    tutorialStateIndex += 1
+                }
+            default:
+                Image("icon_tab5")
+            }
         }
     }
 }
@@ -293,6 +343,99 @@ extension TutorialView {
         .onTapGesture {
             tutorialState = tutorialStateList[tutorialStateIndex + 1]
             tutorialStateIndex += 1
+        }
+    }
+    
+    // Dream1
+    var Dream1View: some View {
+        ZStack {
+            Color.black.opacity(0.5)
+            VStack {
+                ZStack {
+                    Image("finger_top_right_bling")
+                        .offset(x: -90, y: 60)
+                    Image("character_rough")
+                        .offset(x: 140)
+                }
+                Text("‘칭찬하기’와 ‘가치찾기’를 통해\n나의 동사형 꿈이 나오면")
+                    .description()
+                    .multilineTextAlignment(.center)
+                Spacer()
+                    .frame(height: 130)
+            }
+        }
+        .ignoresSafeArea()
+        .onTapGesture {
+            tutorialState = tutorialStateList[tutorialStateIndex + 1]
+            tutorialStateIndex += 1
+        }
+    }
+    
+    // Dream2
+    var Dream2View: some View {
+        ZStack {
+            Color.black.opacity(0.5)
+            VStack {
+                Spacer()
+                    .frame(height: 240)
+                Text("여러분의 직업우주가 생기고\n직업검색도 가능합니다")
+                    .description()
+                    .multilineTextAlignment(.center)
+                ZStack {
+                    Image("finger_top_right_bling")
+                        .offset(x: -60, y: 80)
+                    Image("character_eye")
+                        .offset(x: 140, y: 30)
+                }
+            }
+        }
+        .ignoresSafeArea()
+        .onTapGesture {
+            tutorialState = tutorialStateList[tutorialStateIndex + 1]
+            tutorialStateIndex += 1
+        }
+    }
+    
+    // share
+    var Share1View: some View {
+        ZStack {
+            Color.black.opacity(0.5)
+            VStack {
+                Spacer()
+                    .frame(height: 220)
+                Text("여러분의 직업우주가 생기고\n직업검색도 가능합니다")
+                    .description()
+                    .multilineTextAlignment(.center)
+                Spacer()
+                    .frame(height: 60)
+                Image("character_familly")
+                Image("finter_down_right")
+                    .offset(x: 120, y: 40)
+            }
+        }
+        .ignoresSafeArea()
+        .onTapGesture {
+            tutorialState = tutorialStateList[tutorialStateIndex + 1]
+            tutorialStateIndex += 1
+        }
+    }
+    
+    var Mission1View: some View {
+        ZStack {
+            Color.black.opacity(0.5)
+            VStack {
+                Image("character_handsUp")
+                    .padding(.bottom, 20)
+                Text("더욱 자세한건\n‘오늘의 미션’을 통해\n알아보세요!")
+                    .description()
+                    .multilineTextAlignment(.center)
+            }
+            Image("finger_down_left")
+                .offset(x:-100, y:260)
+        }
+        .ignoresSafeArea()
+        .onTapGesture {
+            print("end tutorail")
         }
     }
 }
