@@ -7,7 +7,25 @@
 
 import SwiftUI
 
+enum TutorialState {
+    case intro
+    case findValueButton
+    case findValue1
+    case findValue2
+    case praiseButton
+    case praise1
+    case dreamButton
+    case dream1
+    case dream2
+    case shareButton
+    case share1
+    case missionButton
+    case mission1
+}
+
 struct TutorialView: View {
+    
+    
     var body: some View {
         BackgroundView {
             VStack(spacing: 0) {
@@ -19,7 +37,7 @@ struct TutorialView: View {
                     Text("0")
                         .description()
                 }
-                .padding(.bottom, 20)
+                .padding([.bottom, .horizontal], 20)
                 Image("main_question")
                     .padding(.bottom, 20)
                 HStack(spacing: 30) {

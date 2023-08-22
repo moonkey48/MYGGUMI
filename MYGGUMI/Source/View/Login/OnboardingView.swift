@@ -51,11 +51,11 @@ struct OnboardingView: View {
                         Text("다음")
                             .description(.white, 23)
                     }
-                    .padding(.trailing, 80)
+                    .padding(.trailing, 40)
                 
                 }
                 Spacer()
-                    .frame(height: 140)
+                    .frame(height: 40)
             }
         }
         .onAppear {
