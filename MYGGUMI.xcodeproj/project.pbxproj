@@ -19,6 +19,7 @@
 		9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DE052A8CDF2300FAFA48 /* ViewExtension.swift */; };
 		959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598626F2A937DCC0047E1D5 /* OnboardingView.swift */; };
 		959862732A9393A90047E1D5 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959862722A9393A90047E1D5 /* TutorialView.swift */; };
+		95F15BCE2A94985B00E48694 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F15BCD2A94985B00E48694 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		9581DE052A8CDF2300FAFA48 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		9598626F2A937DCC0047E1D5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		959862722A9393A90047E1D5 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		95F15BCD2A94985B00E48694 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		9581DDED2A8CC4D000FAFA48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				95F15BCC2A94985200E48694 /* Main */,
 				959862712A93939A0047E1D5 /* Tutorial */,
 				9581DDF42A8CC6BB00FAFA48 /* JobSpace */,
 				9581DDF32A8CC69F00FAFA48 /* Character */,
@@ -227,6 +230,14 @@
 			path = Tutorial;
 			sourceTree = "<group>";
 		};
+		95F15BCC2A94985200E48694 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				95F15BCD2A94985B00E48694 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,6 +312,7 @@
 				9581DDFA2A8CD9C400FAFA48 /* LoginView.swift in Sources */,
 				9581DE002A8CDD7800FAFA48 /* TextModifier.swift in Sources */,
 				959862732A9393A90047E1D5 /* TutorialView.swift in Sources */,
+				95F15BCE2A94985B00E48694 /* MainView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,
