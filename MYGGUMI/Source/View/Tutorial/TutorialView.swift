@@ -34,7 +34,7 @@ struct TutorialView: View {
     var body: some View {
         BackgroundView {
             VStack(spacing: 0) {
-                Header
+                HeaderView()
                 TopSection
                 // MARK: Modal
                 
@@ -89,16 +89,6 @@ struct TutorialView: View {
 
 // MARK: 기본 뷰
 extension TutorialView {
-    var Header: some View {
-        HStack(spacing: 0) {
-            Spacer()
-            Image("main_coin")
-                .padding(.trailing, 10)
-            Text("0")
-                .description()
-        }
-        .padding([.bottom, .horizontal], 20)
-    }
     
     var TopSection: some View {
         Group {

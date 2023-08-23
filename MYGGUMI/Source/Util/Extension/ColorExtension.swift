@@ -10,6 +10,7 @@ import SwiftUI
 enum CustomColor {
     case white
     case black
+    case purple
 }
 
 extension Color {
@@ -33,6 +34,8 @@ extension Color {
             self.init(hex: "#ffffff")
         case .black:
             self.init(hex: "#000000")
+        case .purple:
+            self.init(hex: "#251260")
         }
     }
 }

@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @ObservedObject private var basicDataObservable = BasicDataObservable.shared
     var body: some View {
         HStack(spacing: 0) {
             Spacer()
             Image("main_coin")
                 .padding(.trailing, 10)
-            Text("0")
+            Text("\(basicDataObservable.coin)")
                 .description()
         }
         .padding([.bottom, .horizontal], 20)

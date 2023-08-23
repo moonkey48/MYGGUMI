@@ -7,13 +7,8 @@
 
 import SwiftUI
 
-struct Mission:Hashable {
-    let id = UUID().uuidString
-    var content: String
-    var isComplete: Bool
-}
 
-struct MissionPage: View {
+struct ComplimentTutorialView: View {
     @State private var missionList: [Mission] = [
         Mission(content: "친구 2명 칭찬하기", isComplete: false),
         Mission(content: "꾸미와 대화나누기", isComplete: false),
@@ -31,6 +26,10 @@ struct MissionPage: View {
                     Image("mission_textBG1")
                     Text("오늘의 미션")
                         .description(.white, 25)
+                    
+                    Image("finger_down")
+                        .offset(x: -100, y: 110)
+                    
                 }
                 .padding(.bottom, 90)
                 VStack(spacing: 18) {
@@ -78,8 +77,8 @@ struct MissionPage: View {
     }
 }
 
-struct MissionPage_Previews: PreviewProvider {
+struct ComplimentTutorialView_Previews: PreviewProvider {
     static var previews: some View {
-        MissionPage()
+        ComplimentTutorialView()
     }
 }

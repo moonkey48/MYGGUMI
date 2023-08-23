@@ -10,6 +10,11 @@
 		9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A52A95DFA300DF48E4 /* MissionPage.swift */; };
 		9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A82A95E04100DF48E4 /* HeaderView.swift */; };
 		9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */; };
+		9554A6AD2A95E1CF00DF48E4 /* missionImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9554A6AC2A95E1CF00DF48E4 /* missionImage.xcassets */; };
+		9554A6AF2A95E29700DF48E4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6AE2A95E29700DF48E4 /* CustomTabView.swift */; };
+		9554A6B12A96341100DF48E4 /* ComplimentTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B02A96341100DF48E4 /* ComplimentTutorialView.swift */; };
+		9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */; };
+		9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B52A96379E00DF48E4 /* RectangleView.swift */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -29,6 +34,11 @@
 		9554A6A52A95DFA300DF48E4 /* MissionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPage.swift; sourceTree = "<group>"; };
 		9554A6A82A95E04100DF48E4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataObservable.swift; sourceTree = "<group>"; };
+		9554A6AC2A95E1CF00DF48E4 /* missionImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = missionImage.xcassets; sourceTree = "<group>"; };
+		9554A6AE2A95E29700DF48E4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		9554A6B02A96341100DF48E4 /* ComplimentTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentTutorialView.swift; sourceTree = "<group>"; };
+		9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentMainView.swift; sourceTree = "<group>"; };
+		9554A6B52A96379E00DF48E4 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,8 +70,17 @@
 			isa = PBXGroup;
 			children = (
 				9554A6A82A95E04100DF48E4 /* HeaderView.swift */,
+				9554A6AE2A95E29700DF48E4 /* CustomTabView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		9554A6B22A96369700DF48E4 /* Compliment */ = {
+			isa = PBXGroup;
+			children = (
+				9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */,
+			);
+			path = Compliment;
 			sourceTree = "<group>";
 		};
 		9581DDCF2A8CC2F000FAFA48 = {
@@ -124,6 +143,7 @@
 		9581DDED2A8CC4D000FAFA48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9554A6B22A96369700DF48E4 /* Compliment */,
 				9554A6A72A95E01900DF48E4 /* Component */,
 				95F15BCC2A94985200E48694 /* Main */,
 				959862712A93939A0047E1D5 /* Tutorial */,
@@ -193,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				9581DDFB2A8CD9E900FAFA48 /* BackgroundView.swift */,
+				9554A6B52A96379E00DF48E4 /* RectangleView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				9581DDF72A8CD94D00FAFA48 /* Images.xcassets */,
+				9554A6AC2A95E1CF00DF48E4 /* missionImage.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -243,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				959862722A9393A90047E1D5 /* TutorialView.swift */,
+				9554A6B02A96341100DF48E4 /* ComplimentTutorialView.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -315,6 +338,7 @@
 			files = (
 				9581DDF82A8CD94D00FAFA48 /* Images.xcassets in Resources */,
 				9581DDE32A8CC2F100FAFA48 /* Preview Assets.xcassets in Resources */,
+				9554A6AD2A95E1CF00DF48E4 /* missionImage.xcassets in Resources */,
 				9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,15 +354,19 @@
 				9581DE002A8CDD7800FAFA48 /* TextModifier.swift in Sources */,
 				9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */,
 				959862732A9393A90047E1D5 /* TutorialView.swift in Sources */,
+				9554A6B12A96341100DF48E4 /* ComplimentTutorialView.swift in Sources */,
+				9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */,
 				95F15BCE2A94985B00E48694 /* MainView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
 				9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,
 				959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */,
+				9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */,
 				9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */,
 				9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */,
 				9581DE032A8CDDB200FAFA48 /* ColorExtension.swift in Sources */,
+				9554A6AF2A95E29700DF48E4 /* CustomTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@ enum MainState {
     case login
     case onboarding
     case tutorial
+    case complimentTutorial
 }
 
 struct ContentView: View {
@@ -23,6 +24,8 @@ struct ContentView: View {
         case .onboarding:
             OnboardingView(mainState: $mainState)
         case .tutorial:
+            TutorialView(mainState: $mainState)
+        case .complimentTutorial:
             TutorialView(mainState: $mainState)
         }
     }
