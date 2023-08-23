@@ -14,6 +14,7 @@ struct Mission:Hashable {
 }
 
 struct MissionPage: View {
+    @State var complimentTutorialCompleted = false
     @State private var missionList: [Mission] = [
         Mission(content: "친구 2명 칭찬하기", isComplete: false),
         Mission(content: "꾸미와 대화나누기", isComplete: false),
@@ -74,6 +75,11 @@ struct MissionPage: View {
                 CustomTabView()
             }
             .padding(.horizontal,60)
+            .onAppear {
+                if complimentTutorialCompleted {
+                    missionList[0].isComplete = true
+                }
+            }
         }
     }
 }

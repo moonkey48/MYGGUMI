@@ -16,6 +16,8 @@
 		9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */; };
 		9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B52A96379E00DF48E4 /* RectangleView.swift */; };
 		9554A6B82A96389400DF48E4 /* ComplimentFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B72A96389400DF48E4 /* ComplimentFriendView.swift */; };
+		9554A6BB2A963D0D00DF48E4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6BA2A963D0D00DF48E4 /* MockData.swift */; };
+		9554A6BD2A964D8900DF48E4 /* ComplimentCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6BC2A964D8900DF48E4 /* ComplimentCompleteView.swift */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -41,6 +43,8 @@
 		9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentMainView.swift; sourceTree = "<group>"; };
 		9554A6B52A96379E00DF48E4 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		9554A6B72A96389400DF48E4 /* ComplimentFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentFriendView.swift; sourceTree = "<group>"; };
+		9554A6BA2A963D0D00DF48E4 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		9554A6BC2A964D8900DF48E4 /* ComplimentCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentCompleteView.swift; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,8 +86,16 @@
 			children = (
 				9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */,
 				9554A6B72A96389400DF48E4 /* ComplimentFriendView.swift */,
+				9554A6BC2A964D8900DF48E4 /* ComplimentCompleteView.swift */,
 			);
 			path = Compliment;
+			sourceTree = "<group>";
+		};
+		9554A6B92A963CFB00DF48E4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		9581DDCF2A8CC2F000FAFA48 = {
@@ -134,6 +146,7 @@
 		9581DDEC2A8CC4C800FAFA48 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9554A6B92A963CFB00DF48E4 /* New Group */,
 				9581DDFD2A8CDD6600FAFA48 /* Util */,
 				9581DDF52A8CC6DD00FAFA48 /* Components */,
 				9581DDEF2A8CC4DF00FAFA48 /* Model */,
@@ -170,6 +183,7 @@
 		9581DDEF2A8CC4DF00FAFA48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9554A6BA2A963D0D00DF48E4 /* MockData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,6 +375,7 @@
 				9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */,
 				95F15BCE2A94985B00E48694 /* MainView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
+				9554A6BB2A963D0D00DF48E4 /* MockData.swift in Sources */,
 				9554A6B82A96389400DF48E4 /* ComplimentFriendView.swift in Sources */,
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
 				9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */,
@@ -371,6 +386,7 @@
 				9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */,
 				9581DE032A8CDDB200FAFA48 /* ColorExtension.swift in Sources */,
 				9554A6AF2A95E29700DF48E4 /* CustomTabView.swift in Sources */,
+				9554A6BD2A964D8900DF48E4 /* ComplimentCompleteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
