@@ -16,6 +16,7 @@ enum OnboardingState:CaseIterable {
 }
 
 struct OnboardingView: View {
+    @Binding var mainState: MainState
     let onboardingStateList = OnboardingState.allCases
     @State private var onboardingState: OnboardingState = .intro
     @State private var onboardingStateIndex = 0
@@ -45,8 +46,12 @@ struct OnboardingView: View {
                 HStack {
                     Spacer()
                     Button {
-                        onboardingState = onboardingStateList[onboardingStateIndex + 1]
-                        onboardingStateIndex += 1
+                        if onboardingStateIndex < onboardingStateList.count - 1 {
+                            onboardingState = onboardingStateList[onboardingStateIndex + 1]
+                            onboardingStateIndex += 1
+                        } else {
+                            mainState = .tutorial
+                        }
                     } label: {
                         Text("다음")
                             .description(.white, 23)
@@ -114,8 +119,15 @@ extension OnboardingView {
     }
 }
 
+private struct OnboardingPreview: View {
+    @State private var mainState: MainState = .login
+    var body: some View {
+        OnboardingView(mainState: $mainState)
+    }
+}
+
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingPreview()
     }
 }

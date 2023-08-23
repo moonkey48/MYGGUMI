@@ -22,9 +22,11 @@ enum TutorialState: CaseIterable {
     case share1
     case missionButton
     case mission1
+    case mission2
 }
 
 struct TutorialView: View {
+    @Binding var mainState: MainState
     let tutorialStateList = TutorialState.allCases
     @State private var tutorialStateIndex = 0
     @State private var tutorialState: TutorialState = .intro
@@ -190,6 +192,15 @@ extension TutorialView {
                 .onTapGesture {
                     tutorialState = tutorialStateList[tutorialStateIndex + 1]
                     tutorialStateIndex += 1
+                }
+            case .mission2:
+                ZStack {
+                    Image("icon_tab1")
+                    Image("finger_down_left")
+                        .offset(x:40, y:-80)
+                }
+                .onTapGesture {
+                    
                 }
             default:
                 Image("icon_tab1")
@@ -419,7 +430,7 @@ extension TutorialView {
             tutorialStateIndex += 1
         }
     }
-    
+    // mision1View
     var Mission1View: some View {
         ZStack {
             Color.black.opacity(0.5)
@@ -435,14 +446,20 @@ extension TutorialView {
         }
         .ignoresSafeArea()
         .onTapGesture {
-            print("end tutorail")
+            tutorialState = tutorialStateList[tutorialStateIndex + 1]
+            tutorialStateIndex += 1
         }
     }
 }
-
+private struct TutorialPreview: View {
+    @State private var mainState: MainState = .login
+    var body: some View {
+        TutorialView(mainState: $mainState)
+    }
+}
 
 struct TutorialView_Previews: PreviewProvider {
     static var previews: some View {
-        TutorialView()
+        TutorialPreview()
     }
 }

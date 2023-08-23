@@ -7,9 +7,24 @@
 
 import SwiftUI
 
+enum MainState {
+    case login
+    case onboarding
+    case tutorial
+}
+
 struct ContentView: View {
+    @State private var mainState: MainState = .login
+    
     var body: some View {
-        LoginView()
+        switch mainState {
+        case .login:
+            LoginView(mainState: $mainState)
+        case .onboarding:
+            OnboardingView(mainState: $mainState)
+        case .tutorial:
+            TutorialView(mainState: $mainState)
+        }
     }
 }
 

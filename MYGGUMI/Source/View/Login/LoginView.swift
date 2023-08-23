@@ -41,6 +41,7 @@ let friends = [
 ]
 
 struct LoginView: View {
+    @Binding var mainState: MainState
     @State private var name = ""
     @State private var selectedSchool = ""
     @State private var selectedGrade = ""
@@ -105,7 +106,7 @@ struct LoginView: View {
                                 if selectedFriends.isEmpty {
                                     alertText = "아직 친구를 추가하지 않았습니다!"
                                 } else {
-                                    
+                                    mainState = .onboarding
                                 }
                             default:
                                 return
@@ -240,8 +241,15 @@ extension LoginView {
     }
 }
 
+private struct LoginPreview: View {
+    @State private var mainState: MainState = .login
+    var body: some View {
+        LoginView(mainState: $mainState)
+    }
+}
+
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginPreview()
     }
 }
