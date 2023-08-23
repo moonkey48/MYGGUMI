@@ -15,6 +15,7 @@
 		9554A6B12A96341100DF48E4 /* ComplimentTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B02A96341100DF48E4 /* ComplimentTutorialView.swift */; };
 		9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */; };
 		9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B52A96379E00DF48E4 /* RectangleView.swift */; };
+		9554A6B82A96389400DF48E4 /* ComplimentFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6B72A96389400DF48E4 /* ComplimentFriendView.swift */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -39,6 +40,7 @@
 		9554A6B02A96341100DF48E4 /* ComplimentTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentTutorialView.swift; sourceTree = "<group>"; };
 		9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentMainView.swift; sourceTree = "<group>"; };
 		9554A6B52A96379E00DF48E4 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		9554A6B72A96389400DF48E4 /* ComplimentFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentFriendView.swift; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				9554A6B32A9636A600DF48E4 /* ComplimentMainView.swift */,
+				9554A6B72A96389400DF48E4 /* ComplimentFriendView.swift */,
 			);
 			path = Compliment;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */,
 				95F15BCE2A94985B00E48694 /* MainView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
+				9554A6B82A96389400DF48E4 /* ComplimentFriendView.swift in Sources */,
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
 				9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,
