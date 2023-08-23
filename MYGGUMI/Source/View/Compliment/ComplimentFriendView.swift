@@ -14,6 +14,7 @@ struct ComplimentFriendView: View {
             VStack {
                 HeaderView()
                 toggleView
+                topView
                 Spacer()
                 CustomTabView()
             }
@@ -31,6 +32,13 @@ extension ComplimentFriendView {
             }
         }
         .padding()
+    }
+    var topView: some View {
+        VStack {
+            Image(changeFriend ? "mission_profile_self" : "mission_profile_friend")
+            Text(changeFriend ? "남을 가장 잘 챙겨주는 친구는?" : "유OO에게 가장 잘 어울리는 말은?")
+                .description(.white, 16)
+        }
     }
 }
 
