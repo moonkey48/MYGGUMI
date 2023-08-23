@@ -26,28 +26,46 @@ struct ComplimentTutorialView: View {
                     Image("mission_textBG1")
                     Text("오늘의 미션")
                         .description(.white, 25)
-                    
                     Image("finger_down")
                         .offset(x: -100, y: 110)
-                    
                 }
                 .padding(.bottom, 90)
                 VStack(spacing: 18) {
                     ForEach(missionList.indices, id: \.self) { index in
                         HStack {
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 25, style: .continuous)
-                                    .fill(missionList[index].isComplete ? .white.opacity(1) : .white.opacity(0.1))
-                                    .frame(width: 200, height: 36)
-                                RoundedRectangle(cornerRadius: 25, style: .continuous)
-                                    .stroke(.white, lineWidth: 2)
-                                    .frame(width: 200, height: 36)
-                                Text(missionList[index].content)
-                                    .lineSpacing(-10)
-                                    .description(missionList[index].isComplete ? .purple : .white, 16)
+                            if index == 0 {
+                                NavigationLink {
+                                    ComplimentFriendView()
+                                } label: {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 25, style: .continuous)
+                                            .fill(missionList[index].isComplete ? .white.opacity(1) : .white.opacity(0.1))
+                                            .frame(width: 200, height: 36)
+                                        RoundedRectangle(cornerRadius: 25, style: .continuous)
+                                            .stroke(.white, lineWidth: 2)
+                                            .frame(width: 200, height: 36)
+                                        Text(missionList[index].content)
+                                            .lineSpacing(-10)
+                                            .description(missionList[index].isComplete ? .purple : .white, 16)
+                                    }
+                                }
+
+                            } else {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 25, style: .continuous)
+                                        .fill(missionList[index].isComplete ? .white.opacity(1) : .white.opacity(0.1))
+                                        .frame(width: 200, height: 36)
+                                    RoundedRectangle(cornerRadius: 25, style: .continuous)
+                                        .stroke(.white, lineWidth: 2)
+                                        .frame(width: 200, height: 36)
+                                    Text(missionList[index].content)
+                                        .lineSpacing(-10)
+                                        .description(missionList[index].isComplete ? .purple : .white, 16)
+                                }
                             }
                             Button {
-                                missionList[index].isComplete.toggle()
+//                                missionList[index].isComplete.toggle()
+                                // toggle on main
                             } label: {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 25, style: .continuous)

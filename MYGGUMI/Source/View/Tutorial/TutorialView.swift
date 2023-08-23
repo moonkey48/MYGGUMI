@@ -32,56 +32,58 @@ struct TutorialView: View {
     @State private var tutorialState: TutorialState = .intro
     
     var body: some View {
-        BackgroundView {
-            VStack(spacing: 0) {
-                HeaderView()
-                TopSection
-                // MARK: Modal
-                
-                HStack(spacing: 10) {
-                    switch tutorialState {
-                    case .praiseButton:
-                        ComplimentModalOnFocused
-                    default:
-                        ComplimentModal
+        NavigationStack {
+            BackgroundView {
+                VStack(spacing: 0) {
+                    HeaderView()
+                    TopSection
+                    // MARK: Modal
+                    
+                    HStack(spacing: 10) {
+                        switch tutorialState {
+                        case .praiseButton:
+                            ComplimentModalOnFocused
+                        default:
+                            ComplimentModal
+                        }
+                        switch tutorialState {
+                        case .findValueButton:
+                            ValueModalOnFocused
+                        default:
+                            ValueModal
+                        }
                     }
-                    switch tutorialState {
-                    case .findValueButton:
-                        ValueModalOnFocused
-                    default:
-                        ValueModal
-                    }
+                    .padding(.bottom, 10)
+                    
+                    // MARK: MainModal
+                    MainModal
+                    Spacer()
+                    // MARK: Footer
+                    CustomTabView
                 }
-                .padding(.bottom, 10)
+                .padding(.horizontal,60)
                 
-                // MARK: MainModal
-                MainModal
-                Spacer()
-                // MARK: Footer
-                CustomTabView
-            }
-            .padding(.horizontal,60)
-            
-            // MARK: handle state
-            switch tutorialState {
-            case .intro:
-                IntroStateView
-            case .findValue1:
-                FindValue1View
-            case .findValue2:
-                FindValue2View
-            case .praise1:
-                Praise1View
-            case .dream1:
-                Dream1View
-            case .dream2:
-                Dream2View
-            case .share1:
-                Share1View
-            case .mission1:
-                Mission1View
-            default:
-                EmptyView()
+                // MARK: handle state
+                switch tutorialState {
+                case .intro:
+                    IntroStateView
+                case .findValue1:
+                    FindValue1View
+                case .findValue2:
+                    FindValue2View
+                case .praise1:
+                    Praise1View
+                case .dream1:
+                    Dream1View
+                case .dream2:
+                    Dream2View
+                case .share1:
+                    Share1View
+                case .mission1:
+                    Mission1View
+                default:
+                    EmptyView()
+                }
             }
         }
     }
@@ -184,13 +186,14 @@ extension TutorialView {
                     tutorialStateIndex += 1
                 }
             case .mission2:
-                ZStack {
-                    Image("icon_tab1")
-                    Image("finger_down_left")
-                        .offset(x:40, y:-80)
-                }
-                .onTapGesture {
-                    
+                NavigationLink {
+                    ComplimentTutorialView()
+                } label: {
+                    ZStack {
+                        Image("icon_tab1")
+                        Image("finger_down_left")
+                            .offset(x:40, y:-80)
+                    }
                 }
             default:
                 Image("icon_tab1")
