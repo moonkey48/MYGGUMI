@@ -197,6 +197,9 @@ extension ChatWithGGUMI {
                     .padding(.bottom,20)
                 VStack {
                     Button {
+                        if missionObservable.showFindValueView {
+                            missionObservable.showFindValueView = false
+                        }
                         missionObservable.missionList[1].isComplete = true
                         missionObservable.showTalkView = false
                     } label: {

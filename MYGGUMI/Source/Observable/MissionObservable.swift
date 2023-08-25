@@ -22,4 +22,5 @@ final class MissionObservable: ObservableObject {
     @Published var showTalkView = false
     @Published var showShareLifeView = false
     @Published var showExperienceJobView = false
+    @Published var showFindValueView = false
 }

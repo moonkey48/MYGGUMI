@@ -88,7 +88,7 @@ struct MissionPage: View {
                 ChatWithGGUMI()
             }
             .navigationDestination(isPresented: $missionObservable.showShareLifeView) {
-                FindValueMainView()
+                ShareWithGGUMI()
             }
             .navigationDestination(isPresented: $missionObservable.showExperienceJobView) {
                 JobSpaceView()

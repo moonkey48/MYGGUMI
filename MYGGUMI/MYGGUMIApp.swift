@@ -11,7 +11,7 @@ import SwiftUI
 struct MYGGUMIApp: App {
     var body: some Scene {
         WindowGroup {
-            MissionPage()
+            MainView()
         }
     }
 }

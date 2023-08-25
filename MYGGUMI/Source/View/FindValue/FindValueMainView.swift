@@ -9,26 +9,24 @@ import SwiftUI
 
 struct FindValueMainView: View {
     var body: some View {
-        NavigationStack {// TODO: will delete
-            BackgroundView {
-                    VStack(spacing: 0) {
-                        HeaderView()
-                        Spacer()
-                        VStack(spacing: 25) {
-                            NavigationLink {
-                                ChatWithGGUMI()
-                            } label: {
-                                RectangleView(width: 265, height: 105, text: "꾸미와 채팅")
-                            }
-                            NavigationLink {
-                                ShareWithGGUMI()
-                            } label: {
-                                RectangleView(width: 265, height: 105, text: "꾸미와 일상공유")
-                            }
-                        }
-                        Spacer()
-                        CustomTabView()
+        BackgroundView {
+            VStack(spacing: 0) {
+                HeaderView()
+                Spacer()
+                VStack(spacing: 25) {
+                    NavigationLink {
+                        ChatWithGGUMI()
+                    } label: {
+                        RectangleView(width: 265, height: 105, text: "꾸미와 채팅")
                     }
+                    NavigationLink {
+                        ShareWithGGUMI()
+                    } label: {
+                        RectangleView(width: 265, height: 105, text: "꾸미와 일상공유")
+                    }
+                }
+                Spacer()
+                CustomTabView()
             }
         }
     }
