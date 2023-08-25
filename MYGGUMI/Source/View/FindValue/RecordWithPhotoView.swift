@@ -38,7 +38,7 @@ struct RecordWithPhotoView: View {
                                     showingImagePickerLeft = true
                                 }
                         } else {
-                            RectangleView(width: 120, height: 106)
+                            RectangleView(width: 120, height: 106, text: "")
                                 .onTapGesture {
                                     showingImagePickerLeft = true
                                 }
@@ -53,7 +53,7 @@ struct RecordWithPhotoView: View {
                                     showingImagePickerRight = true
                                 }
                         } else {
-                            RectangleView(width: 120, height: 106)
+                            RectangleView(width: 120, height: 106, text: "")
                                 .onTapGesture {
                                     showingImagePickerRight = true
                                 }
@@ -70,6 +70,7 @@ struct RecordWithPhotoView: View {
                                         Spacer()
                                     }
                                 }
+                                .tint(.white)
                             Spacer()
                         }
                         .padding()
@@ -81,7 +82,7 @@ struct RecordWithPhotoView: View {
                     HStack {
                         Spacer()
                         NavigationLink {
-                            // TODO: Navigation to calender
+                            CalenderView()
                         } label: {
                             RectangleView(width: 100, height: 40, text: "작성완료")
                         }
@@ -101,7 +102,11 @@ struct RecordWithPhotoView: View {
             ImagePicker(selectedImage: $selectedImageRight)
         }
         .onAppear {
-            showingImagePickerLeft = true
+            if let _ = imageLeft {
+                
+            } else {
+                showingImagePickerLeft = true
+            }
         }
     }
     private func loadImageLeft() {

@@ -9,7 +9,13 @@ import SwiftUI
 
 struct RecordWithAIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        BackgroundView {
+            VStack {
+                HeaderView()
+                Spacer()
+                CustomTabView()
+            }
+        }
     }
 }
 

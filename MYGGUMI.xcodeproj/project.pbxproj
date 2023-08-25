@@ -26,6 +26,8 @@
 		9554A6C92A97515C00DF48E4 /* RecordWithPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6C82A97515C00DF48E4 /* RecordWithPhotoView.swift */; };
 		9554A6CB2A97517500DF48E4 /* RecordWithAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6CA2A97517500DF48E4 /* RecordWithAIView.swift */; };
 		9554A6CD2A986A6900DF48E4 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6CC2A986A6900DF48E4 /* ImagePickerView.swift */; };
+		9554A6D12A98758500DF48E4 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D02A98758500DF48E4 /* CalenderView.swift */; };
+		9554A6D42A98790900DF48E4 /* CompleteMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D32A98790900DF48E4 /* CompleteMissionView.swift */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -61,6 +63,8 @@
 		9554A6C82A97515C00DF48E4 /* RecordWithPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWithPhotoView.swift; sourceTree = "<group>"; };
 		9554A6CA2A97517500DF48E4 /* RecordWithAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWithAIView.swift; sourceTree = "<group>"; };
 		9554A6CC2A986A6900DF48E4 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		9554A6D02A98758500DF48E4 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		9554A6D32A98790900DF48E4 /* CompleteMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteMissionView.swift; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,14 @@
 				9554A6BC2A964D8900DF48E4 /* ComplimentCompleteView.swift */,
 			);
 			path = Compliment;
+			sourceTree = "<group>";
+		};
+		9554A6D22A9878F500DF48E4 /* CompleteMission */ = {
+			isa = PBXGroup;
+			children = (
+				9554A6D32A98790900DF48E4 /* CompleteMissionView.swift */,
+			);
+			path = CompleteMission;
 			sourceTree = "<group>";
 		};
 		9581DDCF2A8CC2F000FAFA48 = {
@@ -167,6 +179,7 @@
 		9581DDED2A8CC4D000FAFA48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9554A6D22A9878F500DF48E4 /* CompleteMission */,
 				9554A6B22A96369700DF48E4 /* Compliment */,
 				9554A6A72A95E01900DF48E4 /* Component */,
 				95F15BCC2A94985200E48694 /* Main */,
@@ -223,6 +236,7 @@
 				9554A6C82A97515C00DF48E4 /* RecordWithPhotoView.swift */,
 				9554A6CA2A97517500DF48E4 /* RecordWithAIView.swift */,
 				9554A6CC2A986A6900DF48E4 /* ImagePickerView.swift */,
+				9554A6D02A98758500DF48E4 /* CalenderView.swift */,
 			);
 			path = FindValue;
 			sourceTree = "<group>";
@@ -394,6 +408,7 @@
 				9554A6CB2A97517500DF48E4 /* RecordWithAIView.swift in Sources */,
 				9554A6B12A96341100DF48E4 /* ComplimentTutorialView.swift in Sources */,
 				9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */,
+				9554A6D12A98758500DF48E4 /* CalenderView.swift in Sources */,
 				9554A6C32A97114400DF48E4 /* ShareWithGGUMI.swift in Sources */,
 				95F15BCE2A94985B00E48694 /* MainView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
@@ -401,6 +416,7 @@
 				9554A6BB2A963D0D00DF48E4 /* MockData.swift in Sources */,
 				9554A6B82A96389400DF48E4 /* ComplimentFriendView.swift in Sources */,
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
+				9554A6D42A98790900DF48E4 /* CompleteMissionView.swift in Sources */,
 				9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,
 				959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */,

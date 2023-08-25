@@ -1,13 +1,15 @@
 //
-//  ComplimentCompleteView.swift
+//  CompleteMissionView.swift
 //  MYGGUMI
 //
-//  Created by Seungui Moon on 2023/08/23.
+//  Created by Seungui Moon on 2023/08/25.
 //
 
 import SwiftUI
 
-struct ComplimentCompleteView: View {
+struct CompleteMissionView: View {
+    @State var completeText = ""
+    var comletionHander: () -> Void
     var body: some View {
         BackgroundView {
             NavigationLink {
@@ -33,8 +35,10 @@ struct ComplimentCompleteView: View {
     }
 }
 
-struct ComplimentCompleteView_Previews: PreviewProvider {
+struct CompleteMissionView_Previews: PreviewProvider {
     static var previews: some View {
-        ComplimentCompleteView()
+        CompleteMissionView(completeText: "친구 칭찬하기를 통해\n$5 꾸미가 적립되었습니다!") {
+            
+        }
     }
 }
