@@ -20,7 +20,7 @@ struct ComplimentMainView: View {
                         RectangleView(width: 266, height: 120, text: "친구 칭찬")
                     }
                     NavigationLink {
-                        
+                        ComplimentSelfView()
                     } label: {
                         RectangleView(width: 266, height: 120, text: "셀프 칭찬")
                     }
