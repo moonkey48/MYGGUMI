@@ -22,6 +22,10 @@
 		9554A6C12A97111A00DF48E4 /* ChatWithGGUMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6C02A97111A00DF48E4 /* ChatWithGGUMI.swift */; };
 		9554A6C32A97114400DF48E4 /* ShareWithGGUMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6C22A97114400DF48E4 /* ShareWithGGUMI.swift */; };
 		9554A6C52A97121F00DF48E4 /* findValue.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9554A6C42A97121F00DF48E4 /* findValue.xcassets */; };
+		9554A6C72A97513A00DF48E4 /* RecordWithDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6C62A97513A00DF48E4 /* RecordWithDiaryView.swift */; };
+		9554A6C92A97515C00DF48E4 /* RecordWithPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6C82A97515C00DF48E4 /* RecordWithPhotoView.swift */; };
+		9554A6CB2A97517500DF48E4 /* RecordWithAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6CA2A97517500DF48E4 /* RecordWithAIView.swift */; };
+		9554A6CD2A986A6900DF48E4 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6CC2A986A6900DF48E4 /* ImagePickerView.swift */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -53,6 +57,10 @@
 		9554A6C02A97111A00DF48E4 /* ChatWithGGUMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWithGGUMI.swift; sourceTree = "<group>"; };
 		9554A6C22A97114400DF48E4 /* ShareWithGGUMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareWithGGUMI.swift; sourceTree = "<group>"; };
 		9554A6C42A97121F00DF48E4 /* findValue.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = findValue.xcassets; sourceTree = "<group>"; };
+		9554A6C62A97513A00DF48E4 /* RecordWithDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWithDiaryView.swift; sourceTree = "<group>"; };
+		9554A6C82A97515C00DF48E4 /* RecordWithPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWithPhotoView.swift; sourceTree = "<group>"; };
+		9554A6CA2A97517500DF48E4 /* RecordWithAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWithAIView.swift; sourceTree = "<group>"; };
+		9554A6CC2A986A6900DF48E4 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,13 +105,6 @@
 				9554A6BC2A964D8900DF48E4 /* ComplimentCompleteView.swift */,
 			);
 			path = Compliment;
-			sourceTree = "<group>";
-		};
-		9554A6B92A963CFB00DF48E4 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		9581DDCF2A8CC2F000FAFA48 = {
@@ -154,7 +155,6 @@
 		9581DDEC2A8CC4C800FAFA48 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				9554A6B92A963CFB00DF48E4 /* New Group */,
 				9581DDFD2A8CDD6600FAFA48 /* Util */,
 				9581DDF52A8CC6DD00FAFA48 /* Components */,
 				9581DDEF2A8CC4DF00FAFA48 /* Model */,
@@ -219,6 +219,10 @@
 				9554A6BE2A97106800DF48E4 /* FindValueMainView.swift */,
 				9554A6C02A97111A00DF48E4 /* ChatWithGGUMI.swift */,
 				9554A6C22A97114400DF48E4 /* ShareWithGGUMI.swift */,
+				9554A6C62A97513A00DF48E4 /* RecordWithDiaryView.swift */,
+				9554A6C82A97515C00DF48E4 /* RecordWithPhotoView.swift */,
+				9554A6CA2A97517500DF48E4 /* RecordWithAIView.swift */,
+				9554A6CC2A986A6900DF48E4 /* ImagePickerView.swift */,
 			);
 			path = FindValue;
 			sourceTree = "<group>";
@@ -385,12 +389,15 @@
 				9554A6BF2A97106800DF48E4 /* FindValueMainView.swift in Sources */,
 				9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */,
 				959862732A9393A90047E1D5 /* TutorialView.swift in Sources */,
+				9554A6C92A97515C00DF48E4 /* RecordWithPhotoView.swift in Sources */,
 				9554A6C12A97111A00DF48E4 /* ChatWithGGUMI.swift in Sources */,
+				9554A6CB2A97517500DF48E4 /* RecordWithAIView.swift in Sources */,
 				9554A6B12A96341100DF48E4 /* ComplimentTutorialView.swift in Sources */,
 				9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */,
 				9554A6C32A97114400DF48E4 /* ShareWithGGUMI.swift in Sources */,
 				95F15BCE2A94985B00E48694 /* MainView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
+				9554A6C72A97513A00DF48E4 /* RecordWithDiaryView.swift in Sources */,
 				9554A6BB2A963D0D00DF48E4 /* MockData.swift in Sources */,
 				9554A6B82A96389400DF48E4 /* ComplimentFriendView.swift in Sources */,
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
@@ -399,6 +406,7 @@
 				959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */,
 				9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */,
 				9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */,
+				9554A6CD2A986A6900DF48E4 /* ImagePickerView.swift in Sources */,
 				9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */,
 				9581DE032A8CDDB200FAFA48 /* ColorExtension.swift in Sources */,
 				9554A6AF2A95E29700DF48E4 /* CustomTabView.swift in Sources */,
