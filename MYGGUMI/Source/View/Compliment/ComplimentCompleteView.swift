@@ -8,27 +8,27 @@
 import SwiftUI
 
 struct ComplimentCompleteView: View {
+    @ObservedObject private var missionObservable = MissionObservable.shared
     var body: some View {
         BackgroundView {
-            NavigationLink {
-                MissionPage(complimentTutorialCompleted: true)
-                    .navigationBarBackButtonHidden()
-            } label: {
-                VStack {
-                    HeaderView()
-                    Spacer()
-                    Image("mission_complete")
-                        .padding(.bottom, 20)
-                    Text("친구 칭찬하기를 통해\n$5 꾸미가 적립되었습니다!")
-                        .description()
-                        .multilineTextAlignment(.center)
-                    Spacer()
-                    CustomTabView()
-                }
+            VStack {
+                HeaderView()
+                Spacer()
+                Image("mission_complete")
+                    .padding(.bottom, 20)
+                Text("친구 칭찬하기를 통해\n$5 꾸미가 적립되었습니다!")
+                    .description()
+                    .multilineTextAlignment(.center)
+                Spacer()
+                CustomTabView()
             }
         }
         .onAppear {
             BasicDataObservable.shared.coin += 5
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                missionObservable.missionList[0].isComplete = true
+                missionObservable.showComplementView = false
+            }
         }
     }
 }

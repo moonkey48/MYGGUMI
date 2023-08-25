@@ -19,6 +19,7 @@ struct ChatWithGGUMI: View {
         case chat
       }
     let chatStateList = ChatState.allCases
+    @ObservedObject private var missionObservable = MissionObservable.shared
     @FocusState private var focusField: Field?
     @State private var chatStateIndex = 0
     @State private var currentChatState: ChatState = .textNotSubmited
@@ -196,7 +197,8 @@ extension ChatWithGGUMI {
                     .padding(.bottom,20)
                 VStack {
                     Button {
-                        // TODO: Navigation to Home
+                        missionObservable.missionList[1].isComplete = true
+                        missionObservable.showTalkView = false
                     } label: {
                         RectangleView(width: 170, height: 48, text: "홈으로")
                     }

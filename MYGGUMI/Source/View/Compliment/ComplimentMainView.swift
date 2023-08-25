@@ -14,8 +14,16 @@ struct ComplimentMainView: View {
                 HeaderView()
                 Spacer()
                 VStack(spacing: 20){
-                    RectangleView(width: 266, height: 120, text: "친구 칭찬")
-                    RectangleView(width: 266, height: 120, text: "셀프 칭찬")
+                    NavigationLink {
+                        ComplimentFriendView()
+                    } label: {
+                        RectangleView(width: 266, height: 120, text: "친구 칭찬")
+                    }
+                    NavigationLink {
+                        
+                    } label: {
+                        RectangleView(width: 266, height: 120, text: "셀프 칭찬")
+                    }
                 }
                 Spacer()
                 CustomTabView()

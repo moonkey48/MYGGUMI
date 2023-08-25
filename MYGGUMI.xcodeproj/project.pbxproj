@@ -28,6 +28,8 @@
 		9554A6CD2A986A6900DF48E4 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6CC2A986A6900DF48E4 /* ImagePickerView.swift */; };
 		9554A6D12A98758500DF48E4 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D02A98758500DF48E4 /* CalenderView.swift */; };
 		9554A6D42A98790900DF48E4 /* CompleteMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D32A98790900DF48E4 /* CompleteMissionView.swift */; };
+		9554A6D62A98DC2400DF48E4 /* MissionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D52A98DC2400DF48E4 /* MissionObservable.swift */; };
+		9554A6D82A98E74800DF48E4 /* JobSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D72A98E74800DF48E4 /* JobSpaceView.swift */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -65,6 +67,8 @@
 		9554A6CC2A986A6900DF48E4 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		9554A6D02A98758500DF48E4 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		9554A6D32A98790900DF48E4 /* CompleteMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteMissionView.swift; sourceTree = "<group>"; };
+		9554A6D52A98DC2400DF48E4 /* MissionObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionObservable.swift; sourceTree = "<group>"; };
+		9554A6D72A98E74800DF48E4 /* JobSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSpaceView.swift; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */,
+				9554A6D52A98DC2400DF48E4 /* MissionObservable.swift */,
 			);
 			path = Observable;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 		9581DDF42A8CC6BB00FAFA48 /* JobSpace */ = {
 			isa = PBXGroup;
 			children = (
+				9554A6D72A98E74800DF48E4 /* JobSpaceView.swift */,
 			);
 			path = JobSpace;
 			sourceTree = "<group>";
@@ -401,6 +407,7 @@
 				9581DDFA2A8CD9C400FAFA48 /* LoginView.swift in Sources */,
 				9581DE002A8CDD7800FAFA48 /* TextModifier.swift in Sources */,
 				9554A6BF2A97106800DF48E4 /* FindValueMainView.swift in Sources */,
+				9554A6D62A98DC2400DF48E4 /* MissionObservable.swift in Sources */,
 				9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */,
 				959862732A9393A90047E1D5 /* TutorialView.swift in Sources */,
 				9554A6C92A97515C00DF48E4 /* RecordWithPhotoView.swift in Sources */,
@@ -423,6 +430,7 @@
 				9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */,
 				9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */,
 				9554A6CD2A986A6900DF48E4 /* ImagePickerView.swift in Sources */,
+				9554A6D82A98E74800DF48E4 /* JobSpaceView.swift in Sources */,
 				9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */,
 				9581DE032A8CDDB200FAFA48 /* ColorExtension.swift in Sources */,
 				9554A6AF2A95E29700DF48E4 /* CustomTabView.swift in Sources */,
