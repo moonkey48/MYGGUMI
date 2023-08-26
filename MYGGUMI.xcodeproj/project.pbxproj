@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9503CB6B2A98FDE2001BA150 /* CharacterAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB6A2A98FDE2001BA150 /* CharacterAIView.swift */; };
+		9503CB6D2A98FE1D001BA150 /* CharacterImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9503CB6C2A98FE1D001BA150 /* CharacterImage.xcassets */; };
+		9503CB6F2A98FEB6001BA150 /* CharacterAILoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB6E2A98FEB6001BA150 /* CharacterAILoadingView.swift */; };
+		9503CB712A98FF29001BA150 /* CharacterAICompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB702A98FF29001BA150 /* CharacterAICompleteView.swift */; };
+		9503CB742A997C07001BA150 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB732A997C07001BA150 /* CameraView.swift */; };
+		9503CB762A998986001BA150 /* CharacterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB752A998986001BA150 /* CharacterCustomView.swift */; };
+		9503CB782A999CD5001BA150 /* BackDropBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB772A999CD5001BA150 /* BackDropBlurView.swift */; };
 		9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A52A95DFA300DF48E4 /* MissionPage.swift */; };
 		9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A82A95E04100DF48E4 /* HeaderView.swift */; };
 		9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */; };
@@ -31,6 +38,7 @@
 		9554A6D62A98DC2400DF48E4 /* MissionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D52A98DC2400DF48E4 /* MissionObservable.swift */; };
 		9554A6D82A98E74800DF48E4 /* JobSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D72A98E74800DF48E4 /* JobSpaceView.swift */; };
 		9554A6DA2A98F35A00DF48E4 /* ComplimentSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D92A98F35A00DF48E4 /* ComplimentSelfView.swift */; };
+		9554A6DC2A98F9C100DF48E4 /* CharacterIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6DB2A98F9C100DF48E4 /* CharacterIntroView.swift */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -47,6 +55,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9503CB6A2A98FDE2001BA150 /* CharacterAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAIView.swift; sourceTree = "<group>"; };
+		9503CB6C2A98FE1D001BA150 /* CharacterImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CharacterImage.xcassets; sourceTree = "<group>"; };
+		9503CB6E2A98FEB6001BA150 /* CharacterAILoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAILoadingView.swift; sourceTree = "<group>"; };
+		9503CB702A98FF29001BA150 /* CharacterAICompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAICompleteView.swift; sourceTree = "<group>"; };
+		9503CB722A997B34001BA150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9503CB732A997C07001BA150 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		9503CB752A998986001BA150 /* CharacterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCustomView.swift; sourceTree = "<group>"; };
+		9503CB772A999CD5001BA150 /* BackDropBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackDropBlurView.swift; sourceTree = "<group>"; };
 		9554A6A52A95DFA300DF48E4 /* MissionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPage.swift; sourceTree = "<group>"; };
 		9554A6A82A95E04100DF48E4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataObservable.swift; sourceTree = "<group>"; };
@@ -71,6 +87,7 @@
 		9554A6D52A98DC2400DF48E4 /* MissionObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionObservable.swift; sourceTree = "<group>"; };
 		9554A6D72A98E74800DF48E4 /* JobSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSpaceView.swift; sourceTree = "<group>"; };
 		9554A6D92A98F35A00DF48E4 /* ComplimentSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentSelfView.swift; sourceTree = "<group>"; };
+		9554A6DB2A98F9C100DF48E4 /* CharacterIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterIntroView.swift; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +162,7 @@
 		9581DDDA2A8CC2F000FAFA48 /* MYGGUMI */ = {
 			isa = PBXGroup;
 			children = (
+				9503CB722A997B34001BA150 /* Info.plist */,
 				9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */,
 				9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */,
 				9581DDEC2A8CC4C800FAFA48 /* Source */,
@@ -252,6 +270,12 @@
 		9581DDF32A8CC69F00FAFA48 /* Character */ = {
 			isa = PBXGroup;
 			children = (
+				9554A6DB2A98F9C100DF48E4 /* CharacterIntroView.swift */,
+				9503CB6A2A98FDE2001BA150 /* CharacterAIView.swift */,
+				9503CB6E2A98FEB6001BA150 /* CharacterAILoadingView.swift */,
+				9503CB702A98FF29001BA150 /* CharacterAICompleteView.swift */,
+				9503CB732A997C07001BA150 /* CameraView.swift */,
+				9503CB752A998986001BA150 /* CharacterCustomView.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -269,6 +293,7 @@
 			children = (
 				9581DDFB2A8CD9E900FAFA48 /* BackgroundView.swift */,
 				9554A6B52A96379E00DF48E4 /* RectangleView.swift */,
+				9503CB772A999CD5001BA150 /* BackDropBlurView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -279,6 +304,7 @@
 				9581DDF72A8CD94D00FAFA48 /* Images.xcassets */,
 				9554A6AC2A95E1CF00DF48E4 /* missionImage.xcassets */,
 				9554A6C42A97121F00DF48E4 /* findValue.xcassets */,
+				9503CB6C2A98FE1D001BA150 /* CharacterImage.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -397,6 +423,7 @@
 				9554A6AD2A95E1CF00DF48E4 /* missionImage.xcassets in Resources */,
 				9554A6C52A97121F00DF48E4 /* findValue.xcassets in Resources */,
 				9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */,
+				9503CB6D2A98FE1D001BA150 /* CharacterImage.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,11 +437,14 @@
 				9581DDFA2A8CD9C400FAFA48 /* LoginView.swift in Sources */,
 				9581DE002A8CDD7800FAFA48 /* TextModifier.swift in Sources */,
 				9554A6BF2A97106800DF48E4 /* FindValueMainView.swift in Sources */,
+				9503CB712A98FF29001BA150 /* CharacterAICompleteView.swift in Sources */,
 				9554A6D62A98DC2400DF48E4 /* MissionObservable.swift in Sources */,
 				9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */,
 				959862732A9393A90047E1D5 /* TutorialView.swift in Sources */,
 				9554A6C92A97515C00DF48E4 /* RecordWithPhotoView.swift in Sources */,
 				9554A6C12A97111A00DF48E4 /* ChatWithGGUMI.swift in Sources */,
+				9554A6DC2A98F9C100DF48E4 /* CharacterIntroView.swift in Sources */,
+				9503CB742A997C07001BA150 /* CameraView.swift in Sources */,
 				9554A6CB2A97517500DF48E4 /* RecordWithAIView.swift in Sources */,
 				9554A6B12A96341100DF48E4 /* ComplimentTutorialView.swift in Sources */,
 				9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */,
@@ -425,13 +455,17 @@
 				9554A6C72A97513A00DF48E4 /* RecordWithDiaryView.swift in Sources */,
 				9554A6DA2A98F35A00DF48E4 /* ComplimentSelfView.swift in Sources */,
 				9554A6BB2A963D0D00DF48E4 /* MockData.swift in Sources */,
+				9503CB762A998986001BA150 /* CharacterCustomView.swift in Sources */,
 				9554A6B82A96389400DF48E4 /* ComplimentFriendView.swift in Sources */,
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
 				9554A6D42A98790900DF48E4 /* CompleteMissionView.swift in Sources */,
+				9503CB6B2A98FDE2001BA150 /* CharacterAIView.swift in Sources */,
 				9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */,
+				9503CB6F2A98FEB6001BA150 /* CharacterAILoadingView.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,
 				959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */,
 				9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */,
+				9503CB782A999CD5001BA150 /* BackDropBlurView.swift in Sources */,
 				9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */,
 				9554A6CD2A986A6900DF48E4 /* ImagePickerView.swift in Sources */,
 				9554A6D82A98E74800DF48E4 /* JobSpaceView.swift in Sources */,
@@ -570,6 +604,7 @@
 				DEVELOPMENT_TEAM = 333J2S2AQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MYGGUMI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -599,6 +634,7 @@
 				DEVELOPMENT_TEAM = 333J2S2AQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MYGGUMI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

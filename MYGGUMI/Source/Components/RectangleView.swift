@@ -13,12 +13,13 @@ struct RectangleView: View {
     @State var text = "default"
     @State var backgroundColor = Color.white.opacity(0.1)
     @State var foregroundColor: CustomColor = .white
+    @State var cornerRadius: CGFloat = 25
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 25, style: .continuous)
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
                 .fill(backgroundColor)
                 .frame(width: width, height: height)
-            RoundedRectangle(cornerRadius: 25, style: .continuous)
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
                 .stroke(.white, lineWidth: 2)
                 .frame(width: width, height: height)
             Text(text)
