@@ -15,6 +15,8 @@
 		9503CB762A998986001BA150 /* CharacterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB752A998986001BA150 /* CharacterCustomView.swift */; };
 		9503CB782A999CD5001BA150 /* BackDropBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB772A999CD5001BA150 /* BackDropBlurView.swift */; };
 		9503CB7A2A99B0A9001BA150 /* CharacterObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB792A99B0A9001BA150 /* CharacterObservable.swift */; };
+		9503CB7D2A99BF13001BA150 /* FriendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB7C2A99BF13001BA150 /* FriendListView.swift */; };
+		9503CB7F2A99C39D001BA150 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB7E2A99C39D001BA150 /* FriendDetailView.swift */; };
 		9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A52A95DFA300DF48E4 /* MissionPage.swift */; };
 		9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A82A95E04100DF48E4 /* HeaderView.swift */; };
 		9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */; };
@@ -65,6 +67,8 @@
 		9503CB752A998986001BA150 /* CharacterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCustomView.swift; sourceTree = "<group>"; };
 		9503CB772A999CD5001BA150 /* BackDropBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackDropBlurView.swift; sourceTree = "<group>"; };
 		9503CB792A99B0A9001BA150 /* CharacterObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObservable.swift; sourceTree = "<group>"; };
+		9503CB7C2A99BF13001BA150 /* FriendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListView.swift; sourceTree = "<group>"; };
+		9503CB7E2A99C39D001BA150 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 		9554A6A52A95DFA300DF48E4 /* MissionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPage.swift; sourceTree = "<group>"; };
 		9554A6A82A95E04100DF48E4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataObservable.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9503CB7B2A99BEFE001BA150 /* FiendList */ = {
+			isa = PBXGroup;
+			children = (
+				9503CB7C2A99BF13001BA150 /* FriendListView.swift */,
+				9503CB7E2A99C39D001BA150 /* FriendDetailView.swift */,
+			);
+			path = FiendList;
+			sourceTree = "<group>";
+		};
 		9554A6A72A95E01900DF48E4 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +219,7 @@
 		9581DDED2A8CC4D000FAFA48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9503CB7B2A99BEFE001BA150 /* FiendList */,
 				9554A6D22A9878F500DF48E4 /* CompleteMission */,
 				9554A6B22A96369700DF48E4 /* Compliment */,
 				9554A6A72A95E01900DF48E4 /* Component */,
@@ -440,6 +454,7 @@
 				9581DDFA2A8CD9C400FAFA48 /* LoginView.swift in Sources */,
 				9581DE002A8CDD7800FAFA48 /* TextModifier.swift in Sources */,
 				9554A6BF2A97106800DF48E4 /* FindValueMainView.swift in Sources */,
+				9503CB7D2A99BF13001BA150 /* FriendListView.swift in Sources */,
 				9503CB712A98FF29001BA150 /* CharacterAICompleteView.swift in Sources */,
 				9554A6D62A98DC2400DF48E4 /* MissionObservable.swift in Sources */,
 				9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */,
@@ -463,6 +478,7 @@
 				9581DE062A8CDF2300FAFA48 /* ViewExtension.swift in Sources */,
 				9554A6D42A98790900DF48E4 /* CompleteMissionView.swift in Sources */,
 				9503CB6B2A98FDE2001BA150 /* CharacterAIView.swift in Sources */,
+				9503CB7F2A99C39D001BA150 /* FriendDetailView.swift in Sources */,
 				9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */,
 				9503CB6F2A98FEB6001BA150 /* CharacterAILoadingView.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,

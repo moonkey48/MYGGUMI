@@ -11,6 +11,7 @@ enum CustomColor {
     case white
     case black
     case purple
+    case lightPurple
     case lightGray
 }
 
@@ -37,6 +38,8 @@ extension Color {
             self.init(hex: "#000000")
         case .purple:
             self.init(hex: "#251260")
+        case .lightPurple:
+            self.init(hex: "#746EA9")
         case .lightGray:
             self.init(hex: "#EFF0F0")
         }
