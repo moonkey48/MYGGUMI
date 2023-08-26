@@ -15,7 +15,8 @@ enum AIViewState: CaseIterable {
 }
 
 struct CharacterAIView: View {
-    @State private var aiViewState: AIViewState = .done
+    @ObservedObject private var characterObservable = CharacterObservable.shared
+    @State private var aiViewState: AIViewState = .notMaking
     @State private var isCamera = false
     
     var body: some View {
@@ -79,7 +80,7 @@ extension CharacterAIView {
             Image("character_default")
             ZStack {
                 Image("textBG_small")
-                Text("당신의 얼굴이\n캐릭터에 적용되었습니다!")
+                Text(characterObservable.customComplete ? "캐릭터 완성!" : "당신의 얼굴이\n캐릭터에 적용되었습니다!")
                     .multilineTextAlignment(.center)
                     .description()
             }
@@ -88,10 +89,18 @@ extension CharacterAIView {
             } label: {
                 RectangleView(width: 228, height: 65, text: "홈으로")
             }
-            NavigationLink {
-                // detail
-            } label: {
-                RectangleView(width: 228, height: 65, text: "캐릭터 세부수정 하러가기")
+            if characterObservable.customComplete {
+                NavigationLink {
+                    // TODO: navigation
+                } label: {
+                    RectangleView(width: 228, height: 65, text: "친구 프로필 구경가기")
+                }
+            } else {
+                NavigationLink {
+                    CharacterCustomView()
+                } label: {
+                    RectangleView(width: 228, height: 65, text: "캐릭터 세부수정 하러가기")
+                }
             }
         }
     }

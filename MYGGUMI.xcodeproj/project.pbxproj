@@ -14,6 +14,7 @@
 		9503CB742A997C07001BA150 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB732A997C07001BA150 /* CameraView.swift */; };
 		9503CB762A998986001BA150 /* CharacterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB752A998986001BA150 /* CharacterCustomView.swift */; };
 		9503CB782A999CD5001BA150 /* BackDropBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB772A999CD5001BA150 /* BackDropBlurView.swift */; };
+		9503CB7A2A99B0A9001BA150 /* CharacterObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB792A99B0A9001BA150 /* CharacterObservable.swift */; };
 		9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A52A95DFA300DF48E4 /* MissionPage.swift */; };
 		9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A82A95E04100DF48E4 /* HeaderView.swift */; };
 		9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */; };
@@ -63,6 +64,7 @@
 		9503CB732A997C07001BA150 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		9503CB752A998986001BA150 /* CharacterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCustomView.swift; sourceTree = "<group>"; };
 		9503CB772A999CD5001BA150 /* BackDropBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackDropBlurView.swift; sourceTree = "<group>"; };
+		9503CB792A99B0A9001BA150 /* CharacterObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObservable.swift; sourceTree = "<group>"; };
 		9554A6A52A95DFA300DF48E4 /* MissionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPage.swift; sourceTree = "<group>"; };
 		9554A6A82A95E04100DF48E4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataObservable.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */,
 				9554A6D52A98DC2400DF48E4 /* MissionObservable.swift */,
+				9503CB792A99B0A9001BA150 /* CharacterObservable.swift */,
 			);
 			path = Observable;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				9503CB6F2A98FEB6001BA150 /* CharacterAILoadingView.swift in Sources */,
 				9581DDFC2A8CD9E900FAFA48 /* BackgroundView.swift in Sources */,
 				959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */,
+				9503CB7A2A99B0A9001BA150 /* CharacterObservable.swift in Sources */,
 				9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */,
 				9503CB782A999CD5001BA150 /* BackDropBlurView.swift in Sources */,
 				9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */,
