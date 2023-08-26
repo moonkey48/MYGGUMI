@@ -8,14 +8,9 @@
 import SwiftUI
 
 struct JobSpaceView: View {
+    
     var body: some View {
-        BackgroundView {
-            VStack {
-                HeaderView()
-                Spacer()
-                CustomTabView()
-            }
-        }
+        Text("main space view")
     }
 }
 
