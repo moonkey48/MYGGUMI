@@ -18,7 +18,7 @@ struct MissionPage: View {
     @ObservedObject private var missionObservable = MissionObservable.shared
      
     var body: some View {
-        NavigationStack {
+        
             BackgroundView {
                 VStack(spacing: 0) {
                     HeaderView()
@@ -81,7 +81,7 @@ struct MissionPage: View {
                     }
                 }
             }
-            .navigationDestination(isPresented: $missionObservable.showComplementView) {
+            .navigationDestination(isPresented: $missionObservable.showComplimentView) {
                 ComplimentMainView()
             }
             .navigationDestination(isPresented: $missionObservable.showTalkView) {
@@ -93,12 +93,12 @@ struct MissionPage: View {
             .navigationDestination(isPresented: $missionObservable.showExperienceJobView) {
                 JobSpaceView()
             }
-        }
+        
     }
     
     private func handleNavigation(_ index: Int) {
         if index == 0 {
-            missionObservable.showComplementView = true
+            missionObservable.showComplimentView = true
         } else if index == 1 {
             missionObservable.showTalkView = true
         } else if index == 2 {

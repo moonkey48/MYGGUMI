@@ -20,6 +20,7 @@ struct ChatWithGGUMI: View {
       }
     let chatStateList = ChatState.allCases
     @ObservedObject private var missionObservable = MissionObservable.shared
+    @ObservedObject private var mainObservable = MainObservable.shared
     @FocusState private var focusField: Field?
     @State private var chatStateIndex = 0
     @State private var currentChatState: ChatState = .textNotSubmited
@@ -199,6 +200,12 @@ extension ChatWithGGUMI {
                     Button {
                         if missionObservable.showFindValueView {
                             missionObservable.showFindValueView = false
+                        }
+                        if mainObservable.showChatFromMain {
+                            mainObservable.showChatFromMain = false
+                        }
+                        if mainObservable.showFindValueFromMain {
+                            mainObservable.showFindValueFromMain = false
                         }
                         missionObservable.missionList[1].isComplete = true
                         missionObservable.showTalkView = false

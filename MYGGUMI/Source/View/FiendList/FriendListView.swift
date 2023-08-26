@@ -24,48 +24,47 @@ let dummyFriendList = [
 
 struct FriendListView: View {
     var body: some View {
-        NavigationStack { // TODO: DELETE / just for test
-            BackgroundView {
-                VStack {
-                    HeaderView()
-                    Spacer()
-                    VStack(spacing: -25) {
-                        ForEach(0..<dummyFriendList.count, id: \.self) { index in
-                            NavigationLink {
-                                FriendDetailView()
-                            } label: {
-                                HStack(spacing: 0) {
-                                    Image("profile\(index + 1)")
-                                    ZStack {
-                                        RoundedRectangle(cornerRadius: 25, style: .continuous)
-                                            .fill(.white.opacity(0.1))
-                                            .frame(width: 230, height: 60)
-                                        RoundedRectangle(cornerRadius: 25, style: .continuous)
-                                            .stroke(.white, lineWidth: 2)
-                                            .frame(width: 230, height: 60)
-                                        HStack {
-                                            VStack(alignment: .leading) {
-                                                Text(dummyFriendList[index].name)
-                                                Text(dummyFriendList[index].tags)
-                                            }
-                                            .description(.white, 15)
-                                            Spacer()
-                                            Image("chat_graphic")
-                                        }
-                                        .padding(.horizontal, 20)
+        BackgroundView {
+            VStack {
+                HeaderView()
+                Spacer()
+                VStack(spacing: -25) {
+                    ForEach(0..<dummyFriendList.count, id: \.self) { index in
+                        NavigationLink {
+                            FriendDetailView()
+                        } label: {
+                            HStack(spacing: 0) {
+                                Image("profile\(index + 1)")
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 25, style: .continuous)
+                                        .fill(.white.opacity(0.1))
                                         .frame(width: 230, height: 60)
+                                    RoundedRectangle(cornerRadius: 25, style: .continuous)
+                                        .stroke(.white, lineWidth: 2)
+                                        .frame(width: 230, height: 60)
+                                    HStack {
+                                        VStack(alignment: .leading) {
+                                            Text(dummyFriendList[index].name)
+                                            Text(dummyFriendList[index].tags)
+                                        }
+                                        .description(.white, 15)
+                                        Spacer()
+                                        Image("chat_graphic")
                                     }
+                                    .padding(.horizontal, 20)
+                                    .frame(width: 230, height: 60)
                                 }
                             }
-
-                            
                         }
+
+                        
                     }
-                    Spacer()
-                    CustomTabView()
                 }
+                Spacer()
+                CustomTabView()
             }
         }
+        
     }
 }
 

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ComplimentCompleteView: View {
     @ObservedObject private var missionObservable = MissionObservable.shared
+    @ObservedObject private var mainObservable = MainObservable.shared
     var body: some View {
         BackgroundView {
             VStack {
@@ -27,7 +28,10 @@ struct ComplimentCompleteView: View {
             BasicDataObservable.shared.coin += 5
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 missionObservable.missionList[0].isComplete = true
-                missionObservable.showComplementView = false
+                missionObservable.showComplimentView = false
+                if mainObservable.showComplimentFromMain {
+                    mainObservable.showComplimentFromMain = false
+                }
             }
         }
     }

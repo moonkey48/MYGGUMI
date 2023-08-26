@@ -17,6 +17,7 @@
 		9503CB7A2A99B0A9001BA150 /* CharacterObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB792A99B0A9001BA150 /* CharacterObservable.swift */; };
 		9503CB7D2A99BF13001BA150 /* FriendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB7C2A99BF13001BA150 /* FriendListView.swift */; };
 		9503CB7F2A99C39D001BA150 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB7E2A99C39D001BA150 /* FriendDetailView.swift */; };
+		9503CB812A99DC45001BA150 /* MainObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB802A99DC45001BA150 /* MainObservable.swift */; };
 		9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A52A95DFA300DF48E4 /* MissionPage.swift */; };
 		9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A82A95E04100DF48E4 /* HeaderView.swift */; };
 		9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */; };
@@ -69,6 +70,7 @@
 		9503CB792A99B0A9001BA150 /* CharacterObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObservable.swift; sourceTree = "<group>"; };
 		9503CB7C2A99BF13001BA150 /* FriendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListView.swift; sourceTree = "<group>"; };
 		9503CB7E2A99C39D001BA150 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
+		9503CB802A99DC45001BA150 /* MainObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainObservable.swift; sourceTree = "<group>"; };
 		9554A6A52A95DFA300DF48E4 /* MissionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPage.swift; sourceTree = "<group>"; };
 		9554A6A82A95E04100DF48E4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataObservable.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */,
 				9554A6D52A98DC2400DF48E4 /* MissionObservable.swift */,
 				9503CB792A99B0A9001BA150 /* CharacterObservable.swift */,
+				9503CB802A99DC45001BA150 /* MainObservable.swift */,
 			);
 			path = Observable;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				9554A6B62A96379E00DF48E4 /* RectangleView.swift in Sources */,
 				9554A6D12A98758500DF48E4 /* CalenderView.swift in Sources */,
 				9554A6C32A97114400DF48E4 /* ShareWithGGUMI.swift in Sources */,
+				9503CB812A99DC45001BA150 /* MainObservable.swift in Sources */,
 				95F15BCE2A94985B00E48694 /* MainView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
 				9554A6C72A97513A00DF48E4 /* RecordWithDiaryView.swift in Sources */,

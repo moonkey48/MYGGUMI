@@ -9,26 +9,24 @@ import SwiftUI
 
 struct CharacterIntroView: View {
     var body: some View {
-        NavigationStack { // TODO: DELETE / Just for test
-            BackgroundView {
-                VStack {
-                    HeaderView()
-                    Spacer()
-                    TopImageView
-                    ZStack {
-                        Image("textBG_big")
-                        Text("가치 횟수가 다 채워졌습니다!\n잠금이 풀렸습니다!\n캐릭터를 설정하러 가볼까요?")
-                            .multilineTextAlignment(.center)
-                            .description()
-                    }
-                    NavigationLink {
-                        CharacterAIView()
-                    } label: {
-                        RectangleView(width: 210, height: 96, text: "캐릭터 설정하기")
-                    }
-                    Spacer()
-                    CustomTabView()
+        BackgroundView {
+            VStack {
+                HeaderView()
+                Spacer()
+                TopImageView
+                ZStack {
+                    Image("textBG_big")
+                    Text("가치 횟수가 다 채워졌습니다!\n잠금이 풀렸습니다!\n캐릭터를 설정하러 가볼까요?")
+                        .multilineTextAlignment(.center)
+                        .description()
                 }
+                NavigationLink {
+                    CharacterAIView()
+                } label: {
+                    RectangleView(width: 210, height: 96, text: "캐릭터 설정하기")
+                }
+                Spacer()
+                CustomTabView()
             }
         }
     }

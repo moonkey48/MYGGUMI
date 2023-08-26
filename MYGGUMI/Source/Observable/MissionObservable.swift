@@ -18,7 +18,7 @@ final class MissionObservable: ObservableObject {
         Mission(content: "직업체험하기", isComplete: false)
     ]
     
-    @Published var showComplementView = false
+    @Published var showComplimentView = false
     @Published var showTalkView = false
     @Published var showShareLifeView = false
     @Published var showExperienceJobView = false

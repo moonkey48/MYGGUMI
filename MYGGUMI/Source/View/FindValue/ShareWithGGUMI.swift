@@ -9,39 +9,37 @@ import SwiftUI
 
 struct ShareWithGGUMI: View {
     var body: some View {
-        NavigationStack {
-            BackgroundView {
+        BackgroundView {
+            VStack {
+                HeaderView()
+                Spacer()
                 VStack {
-                    HeaderView()
-                    Spacer()
-                    VStack {
-                        Text("10.25 Fri")
-                            .description()
-                            .padding(.bottom, 40)
-                        HStack(spacing: 25) {
-                            NavigationLink {
-                                RecordWithPhotoView()
-                            } label: {
-                                RectangleView(width: 130, height: 115, text: "사진으로\n기록")
-                            }
-                            NavigationLink {
-                                RecordWithDiaryView()
-                            } label: {
-                                RectangleView(width: 130, height: 115, text: "일기로\n기록")
-                            }
-                        }
-                        .padding(.bottom, 10)
+                    Text("10.25 Fri")
+                        .description()
+                        .padding(.bottom, 40)
+                    HStack(spacing: 25) {
                         NavigationLink {
-                            RecordWithAIView()
+                            RecordWithPhotoView()
                         } label: {
-                            RectangleView(width: 285, height: 115, text: "AI꾸미로 기록")
+                            RectangleView(width: 130, height: 115, text: "사진으로\n기록")
+                        }
+                        NavigationLink {
+                            RecordWithDiaryView()
+                        } label: {
+                            RectangleView(width: 130, height: 115, text: "일기로\n기록")
                         }
                     }
-                    .multilineTextAlignment(.center)
-                    Spacer()
-                    CustomTabView()
-                    
+                    .padding(.bottom, 10)
+                    NavigationLink {
+                        RecordWithAIView()
+                    } label: {
+                        RectangleView(width: 285, height: 115, text: "AI꾸미로 기록")
+                    }
                 }
+                .multilineTextAlignment(.center)
+                Spacer()
+                CustomTabView()
+                
             }
         }
     }

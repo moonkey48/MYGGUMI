@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject private var missionObservable = MissionObservable.shared
+    @StateObject private var mainObservable = MainObservable.shared
     
     var body: some View {
         NavigationStack {
@@ -41,12 +41,12 @@ struct MainView: View {
                     // MARK: Modal
                     HStack(spacing: 10) {
                         Button {
-                            missionObservable.showComplementView = true
+                            mainObservable.showComplimentFromMain = true
                         } label: {
                             RectangleView(width: 135, height: 135, text: "칭찬\n하기")
                         }
                         Button {
-                            missionObservable.showFindValueView = true
+                            mainObservable.showFindValueFromMain = true
                         } label: {
                             RectangleView(width: 135, height: 135, text: "가치\n찾기")
                         }
@@ -72,11 +72,23 @@ struct MainView: View {
                 }
                 .padding(.horizontal,60)
             }
-            .navigationDestination(isPresented: $missionObservable.showComplementView) {
+            .navigationDestination(isPresented: $mainObservable.showComplimentFromMain) {
                 ComplimentMainView()
             }
-            .navigationDestination(isPresented: $missionObservable.showFindValueView) {
+            .navigationDestination(isPresented: $mainObservable.showFindValueFromMain) {
                 FindValueMainView()
+            }
+            .navigationDestination(isPresented: $mainObservable.showMissionFromMain) {
+                MissionPage()
+            }
+            .navigationDestination(isPresented: $mainObservable.showSpaceFromMain) {
+                JobSpaceView()
+            }
+            .navigationDestination(isPresented: $mainObservable.showChatFromMain) {
+                ChatWithGGUMI()
+            }
+            .navigationDestination(isPresented: $mainObservable.showFriendListFromMain) {
+                FriendListView()
             }
         }
         
