@@ -26,9 +26,10 @@ struct LoginView: View {
     @State private var alertText = ""
     
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 Spacer()
+                
                 Group {
                     switch loginState {
                     case .intro:
@@ -44,6 +45,8 @@ struct LoginView: View {
                     }
                 }
                 .opacity(transitionOpacity)
+                Spacer()
+                    .frame(height: 30)
                 if !alertText.isEmpty {
                     Text(alertText)
                         .frame(height: 70)
@@ -72,7 +75,7 @@ struct LoginView: View {
                                 }
                             case .school:
                                 if selectedSchool.isEmpty || selectedGrade.isEmpty {
-                                    alertText = "아직 선택이 되지 않았습니다!"
+                                    alertText = "아직 선택이 완료되지 않았습니다!"
                                 } else {
                                     print(name)
                                     loginState = .friends
@@ -89,11 +92,13 @@ struct LoginView: View {
                             
                         } label: {
                             Text("다음")
-                                .description(.white, 23)
+                                .normalDescription(.white, 23)
                         }
-                        .padding(.trailing, 40)
                     }
                 }
+                .padding(.horizontal, 70)
+                .frame(width: geo.size.width)
+                
                 Spacer()
                     .frame(height: 40)
             }
@@ -127,7 +132,7 @@ extension LoginView {
                 .frame(width: 146, height: 72)
                 .padding(.bottom, 35)
             Text("환영합니다!")
-                .description(.white, 17)
+                .normalDescription(.white, 17)
         }
     }
     private var NameView: some View {
@@ -144,6 +149,7 @@ extension LoginView {
                 .background(Color(.white).opacity(0.5))
                 .frame(width: 204, height: 30)
                 .cornerRadius(8)
+                .foregroundColor(.white)
             }
         }
     }
@@ -159,11 +165,13 @@ extension LoginView {
                         Text($0)
                     }
                 }
+                .accentColor(.white)
                 Picker("학년", selection: $selectedGrade) {
                     ForEach(grades, id: \.self) {
                         Text($0)
                     }
                 }
+                .tint(.white)
             }
         }
     }
@@ -184,9 +192,9 @@ extension LoginView {
                             Image("\(friend.imageName)")
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(friend.name)
-                                    .description(.white, 15)
+                                    .normalDescription(.white, 15)
                                 Text(friend.number)
-                                    .description(.white, 11)
+                                    .normalDescription(.white, 11)
                             }
                             Spacer()
                             Button {

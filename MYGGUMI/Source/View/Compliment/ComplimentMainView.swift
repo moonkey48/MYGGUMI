@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ComplimentMainView: View {
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack(spacing: 0) {
                 HeaderView()
                 Spacer()

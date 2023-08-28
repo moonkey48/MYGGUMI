@@ -11,7 +11,7 @@ struct JobSpaceView: View {
     @State private var isShowExperience = false
     
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 toggleView

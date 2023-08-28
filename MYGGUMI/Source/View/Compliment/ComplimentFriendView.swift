@@ -42,7 +42,7 @@ struct ComplimentFriendView: View {
             GridItem(.fixed(126), spacing: nil)
         ]
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 toggleView

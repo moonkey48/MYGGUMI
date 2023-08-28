@@ -11,7 +11,7 @@ struct RecordWithDiaryView: View {
     @State private var diaryText = ""
     
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 VStack(spacing: 40) {

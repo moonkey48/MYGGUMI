@@ -20,7 +20,7 @@ struct CharacterAIView: View {
     @State private var isCamera = false
     
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 Spacer()

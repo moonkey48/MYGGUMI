@@ -10,7 +10,7 @@ import SwiftUI
 struct RecordWithAIView: View {
     @State private var isRecording = true
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 Spacer()

@@ -11,7 +11,7 @@ struct CompleteMissionView: View {
     @State var completeText = ""
     var comletionHander: () -> Void
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 Spacer()

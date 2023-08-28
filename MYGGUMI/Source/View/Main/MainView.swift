@@ -12,7 +12,7 @@ struct MainView: View {
     
     var body: some View {
         NavigationStack {
-            BackgroundView {
+            BackgroundView { geo in
                 VStack(spacing: 0) {
                     HStack(spacing: 0) {
                         Spacer()
@@ -91,7 +91,7 @@ struct MainView: View {
                 FriendListView()
             }
         }
-        
+        .accentColor(.white)
     }
 }
 

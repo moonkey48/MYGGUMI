@@ -18,12 +18,23 @@ struct DescriptionModifier: ViewModifier {
     var color: CustomColor = .white
     var fontType: CustomFontType = .aggroM
     
-
-    
     func body(content: Content) -> some View {
         content
             .foregroundColor(Color(color))
             .lineSpacing(7)
             .font(Font.custom(fontType.rawValue,  size: fontSize))
+    }
+}
+
+struct NormalTextModifier: ViewModifier {
+    var fontSize: CGFloat = 18
+    var color: CustomColor = .white
+    var fontType: CustomFontType = .aggroM
+    
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(Color(color))
+            .lineSpacing(7)
+            .font(.system(size: fontSize))
     }
 }

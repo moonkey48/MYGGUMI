@@ -12,9 +12,9 @@ struct BackgroundView<Content: View>: View {
     @State private var xTop: CGFloat = -150
     @State private var xBottom: CGFloat = 200
     
-    let content: () -> Content
+    let content: (_ geo: GeometryProxy) -> Content
     
-    init(@ViewBuilder content: @escaping () -> Content) {
+    init(@ViewBuilder content: @escaping (_ geo: GeometryProxy) -> Content) {
         self.content = content
     }
     
@@ -32,7 +32,7 @@ struct BackgroundView<Content: View>: View {
                         .offset(x: xTop, y: -450)
                     Image("BG_bottom")
                         .offset(x: xBottom, y: 300)
-                    content()
+                    content(geo)
                 }
                 .frame(width: geo.size.width, height: geo.size.height)
             }

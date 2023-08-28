@@ -23,7 +23,7 @@ struct OnboardingView: View {
     
     
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack(spacing: 0){
                 Spacer()
                 switch onboardingState {
@@ -54,11 +54,11 @@ struct OnboardingView: View {
                         }
                     } label: {
                         Text("다음")
-                            .description(.white, 23)
+                            .normalDescription(.white, 23)
                     }
                     .padding(.trailing, 40)
-                
                 }
+                .frame(width: geo.size.width)
                 Spacer()
                     .frame(height: 40)
             }
@@ -78,10 +78,10 @@ extension OnboardingView {
             Image("onboarding_intro")
                 .padding(.bottom, 28)
             Text("가입완료!")
-                .description(.white, 17)
+                .normalDescription(.white, 17)
                 .padding(.bottom, 55)
             Text("마이꾸미에서\n당신의 꿈을 찾으세요!")
-                .description(.white, 15)
+                .normalDescription(.white, 15)
                 .multilineTextAlignment(.center)
         }
     }
@@ -95,7 +95,7 @@ extension OnboardingView {
             Image("character_basic")
                 .padding(.bottom, 20)
             Text("안녕하세요! 저는 꾸미라고 합니다!\n마이꾸미에 대해\n간단하게 소개해 드릴게요")
-            .description(.white, 15)
+                .normalDescription(.white, 15)
             .multilineTextAlignment(.center)
         }
     }
@@ -104,7 +104,7 @@ extension OnboardingView {
             Image("character_basic")
                 .padding(.bottom, 20)
             Text("사실 꿈이란, 단순한 직업이 아닌\n인생의 목표를 의미해요!")
-            .description(.white, 15)
+                .normalDescription(.white, 15)
             .multilineTextAlignment(.center)
         }
     }
@@ -113,8 +113,8 @@ extension OnboardingView {
             Image("character_basic")
                 .padding(.bottom, 20)
             Text("여러분의 꿈은 여러분의\n능력과 가치를\n통해 만들어진답니다")
-            .description(.white, 15)
-            .multilineTextAlignment(.center)
+                .normalDescription(.white, 15)
+                .multilineTextAlignment(.center)
         }
     }
 }

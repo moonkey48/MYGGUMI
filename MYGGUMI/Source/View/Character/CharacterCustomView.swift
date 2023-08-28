@@ -36,7 +36,7 @@ struct CharacterCustomView: View {
         ]
     
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             CharacterImageView
             VStack {
                 HeaderView()

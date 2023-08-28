@@ -19,7 +19,7 @@ struct RecordWithPhotoView: View {
     @State private var diaryText = ""
         
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 Spacer()

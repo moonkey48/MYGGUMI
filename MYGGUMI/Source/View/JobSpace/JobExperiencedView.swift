@@ -23,7 +23,7 @@ struct JobExperiencedView: View {
     let timeGapC: CGFloat = 240
     
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                     .frame(width: UIScreen.main.bounds.width)

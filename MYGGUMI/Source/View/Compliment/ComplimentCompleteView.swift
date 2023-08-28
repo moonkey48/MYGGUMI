@@ -11,7 +11,7 @@ struct ComplimentCompleteView: View {
     @ObservedObject private var missionObservable = MissionObservable.shared
     @ObservedObject private var mainObservable = MainObservable.shared
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 Spacer()

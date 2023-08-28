@@ -27,7 +27,7 @@ struct ChatWithGGUMI: View {
     @State private var currentText = ""
     @State private var submitedText = ""
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             Group {
                 switch currentChatState {
                 case .textNotSubmited:

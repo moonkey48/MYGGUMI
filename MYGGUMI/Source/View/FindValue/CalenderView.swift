@@ -13,7 +13,7 @@ struct CalenderView: View {
     @ObservedObject private var mainObservable = MainObservable.shared
 
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 Spacer()

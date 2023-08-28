@@ -16,7 +16,7 @@ struct JobSpaceIntroView: View {
     @State private var currentTitle = jobSpaceIntroTitleList[0]
     @State private var currentTitleIndex = 0
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 Spacer()

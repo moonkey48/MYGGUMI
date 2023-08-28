@@ -33,7 +33,7 @@ struct TutorialView: View {
     
     var body: some View {
         NavigationStack {
-            BackgroundView {
+            BackgroundView { geo in
                 VStack(spacing: 0) {
                     HeaderView()
                     TopSection

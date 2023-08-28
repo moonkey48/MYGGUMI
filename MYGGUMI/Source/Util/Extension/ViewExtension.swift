@@ -8,8 +8,11 @@
 import SwiftUI
 
 extension View {
-    func description(_ color: CustomColor = .white, _ fontSize: CGFloat = 18.0) -> some View {
-        modifier(DescriptionModifier(fontSize: fontSize, color: color))
+    func description(_ color: CustomColor = .white, _ fontSize: CGFloat = 18.0, _ fontType: CustomFontType = .aggroM) -> some View {
+        modifier(DescriptionModifier(fontSize: fontSize, color: color, fontType: fontType))
+    }
+    func normalDescription(_ color: CustomColor = .white, _ fontSize: CGFloat = 18.0) -> some View {
+        modifier(NormalTextModifier(fontSize: fontSize, color: color))
     }
     func placeholder<Content: View>(
         when shouldShow: Bool,

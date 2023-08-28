@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CharacterIntroView: View {
     var body: some View {
-        BackgroundView {
+        BackgroundView { geo in
             VStack {
                 HeaderView()
                 Spacer()
