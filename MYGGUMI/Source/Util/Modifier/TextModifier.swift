@@ -7,14 +7,23 @@
 
 import SwiftUI
 
+enum CustomFontType: String {
+    case aggroL = "OTSBAggroL"
+    case aggroM = "OTSBAggroM"
+    case aggroB = "OTSBAggroB"
+}
+
 struct DescriptionModifier: ViewModifier {
     var fontSize: CGFloat = 18
     var color: CustomColor = .white
+    var fontType: CustomFontType = .aggroM
+    
+
     
     func body(content: Content) -> some View {
         content
             .foregroundColor(Color(color))
-            .font(.system(size: fontSize))
             .lineSpacing(7)
+            .font(Font.custom(fontType.rawValue,  size: fontSize))
     }
 }

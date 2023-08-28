@@ -4,5 +4,11 @@
 <dict>
 	<key>Privacy — Camera Usage Description</key>
 	<string>AI 생성을 위해 카메라 접근을 허용하시겠습니까? 정보는 저장되지 않습니다.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SB 어그로OTF Bold.otf</string>
+		<string>SB 어그로OTF M.otf</string>
+		<string>SB 어그로OTF L.otf</string>
+	</array>
 </dict>
 </plist>

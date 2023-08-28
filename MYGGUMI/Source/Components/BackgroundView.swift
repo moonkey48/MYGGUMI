@@ -9,6 +9,9 @@ import SwiftUI
 
 struct BackgroundView<Content: View>: View {
     
+    @State private var xTop: CGFloat = -150
+    @State private var xBottom: CGFloat = 200
+    
     let content: () -> Content
     
     init(@ViewBuilder content: @escaping () -> Content) {
@@ -20,17 +23,24 @@ struct BackgroundView<Content: View>: View {
             GeometryReader { geo in
                 // 수정중 정렬 맞춤 정령에 필요없는 코드는 다시 정리
                 ZStack {
-                    Image("mainBG")
+                    Image("BG_global")
                         .resizable()
                         .ignoresSafeArea()
                         .scaledToFill()
                         .frame(width: geo.size.width, height: geo.size.height)
-                        
-                        
-                        
+                    Image("BG_top")
+                        .offset(x: xTop, y: -450)
+                    Image("BG_bottom")
+                        .offset(x: xBottom, y: 300)
                     content()
                 }
                 .frame(width: geo.size.width, height: geo.size.height)
+            }
+        }
+        .onAppear {
+            withAnimation(.easeIn(duration: 10).repeatForever()) {
+                xTop = -50
+                xBottom = 100
             }
         }
     }

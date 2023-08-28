@@ -21,6 +21,7 @@
 		9503CB832A9A374C001BA150 /* JobSpaceIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB822A9A374C001BA150 /* JobSpaceIntroView.swift */; };
 		9503CB852A9A4E3A001BA150 /* SpaceImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9503CB842A9A4E3A001BA150 /* SpaceImage.xcassets */; };
 		9503CB872A9A4F08001BA150 /* JobExperiencedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503CB862A9A4F08001BA150 /* JobExperiencedView.swift */; };
+		9550F4192A9C4B4400B4E34E /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9550F4182A9C4B4400B4E34E /* FontExtension.swift */; };
 		9554A6A62A95DFA300DF48E4 /* MissionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A52A95DFA300DF48E4 /* MissionPage.swift */; };
 		9554A6A92A95E04100DF48E4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6A82A95E04100DF48E4 /* HeaderView.swift */; };
 		9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */; };
@@ -46,6 +47,9 @@
 		9554A6D82A98E74800DF48E4 /* JobSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D72A98E74800DF48E4 /* JobSpaceView.swift */; };
 		9554A6DA2A98F35A00DF48E4 /* ComplimentSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6D92A98F35A00DF48E4 /* ComplimentSelfView.swift */; };
 		9554A6DC2A98F9C100DF48E4 /* CharacterIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554A6DB2A98F9C100DF48E4 /* CharacterIntroView.swift */; };
+		95592FC02A9C8330007B3C98 /* SB 어그로OTF Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95592FBF2A9C8330007B3C98 /* SB 어그로OTF Bold.otf */; };
+		95592FC52A9C853E007B3C98 /* SB 어그로OTF L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95592FC32A9C853E007B3C98 /* SB 어그로OTF L.otf */; };
+		95592FC62A9C853E007B3C98 /* SB 어그로OTF M.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95592FC42A9C853E007B3C98 /* SB 어그로OTF M.otf */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -77,6 +81,7 @@
 		9503CB822A9A374C001BA150 /* JobSpaceIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSpaceIntroView.swift; sourceTree = "<group>"; };
 		9503CB842A9A4E3A001BA150 /* SpaceImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SpaceImage.xcassets; sourceTree = "<group>"; };
 		9503CB862A9A4F08001BA150 /* JobExperiencedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExperiencedView.swift; sourceTree = "<group>"; };
+		9550F4182A9C4B4400B4E34E /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		9554A6A52A95DFA300DF48E4 /* MissionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPage.swift; sourceTree = "<group>"; };
 		9554A6A82A95E04100DF48E4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9554A6AA2A95E06400DF48E4 /* BasicDataObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataObservable.swift; sourceTree = "<group>"; };
@@ -102,6 +107,9 @@
 		9554A6D72A98E74800DF48E4 /* JobSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSpaceView.swift; sourceTree = "<group>"; };
 		9554A6D92A98F35A00DF48E4 /* ComplimentSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentSelfView.swift; sourceTree = "<group>"; };
 		9554A6DB2A98F9C100DF48E4 /* CharacterIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterIntroView.swift; sourceTree = "<group>"; };
+		95592FBF2A9C8330007B3C98 /* SB 어그로OTF Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SB 어그로OTF Bold.otf"; sourceTree = "<group>"; };
+		95592FC32A9C853E007B3C98 /* SB 어그로OTF L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SB 어그로OTF L.otf"; sourceTree = "<group>"; };
+		95592FC42A9C853E007B3C98 /* SB 어그로OTF M.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SB 어그로OTF M.otf"; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +144,16 @@
 				9503CB7E2A99C39D001BA150 /* FriendDetailView.swift */,
 			);
 			path = FiendList;
+			sourceTree = "<group>";
+		};
+		9550F4222A9C4E4100B4E34E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				95592FC32A9C853E007B3C98 /* SB 어그로OTF L.otf */,
+				95592FC42A9C853E007B3C98 /* SB 어그로OTF M.otf */,
+				95592FBF2A9C8330007B3C98 /* SB 어그로OTF Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		9554A6A72A95E01900DF48E4 /* Component */ = {
@@ -206,6 +224,7 @@
 		9581DDEB2A8CC4A800FAFA48 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9550F4222A9C4E4100B4E34E /* Fonts */,
 				9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */,
 				9581DDF62A8CD93000FAFA48 /* Images */,
 			);
@@ -368,6 +387,7 @@
 			children = (
 				9581DE022A8CDDB200FAFA48 /* ColorExtension.swift */,
 				9581DE052A8CDF2300FAFA48 /* ViewExtension.swift */,
+				9550F4182A9C4B4400B4E34E /* FontExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -451,7 +471,10 @@
 				9581DDF82A8CD94D00FAFA48 /* Images.xcassets in Resources */,
 				9581DDE32A8CC2F100FAFA48 /* Preview Assets.xcassets in Resources */,
 				9554A6AD2A95E1CF00DF48E4 /* missionImage.xcassets in Resources */,
+				95592FC52A9C853E007B3C98 /* SB 어그로OTF L.otf in Resources */,
+				95592FC02A9C8330007B3C98 /* SB 어그로OTF Bold.otf in Resources */,
 				9554A6C52A97121F00DF48E4 /* findValue.xcassets in Resources */,
+				95592FC62A9C853E007B3C98 /* SB 어그로OTF M.otf in Resources */,
 				9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */,
 				9503CB6D2A98FE1D001BA150 /* CharacterImage.xcassets in Resources */,
 			);
@@ -486,6 +509,7 @@
 				95F15BCE2A94985B00E48694 /* MainView.swift in Sources */,
 				9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */,
 				9554A6C72A97513A00DF48E4 /* RecordWithDiaryView.swift in Sources */,
+				9550F4192A9C4B4400B4E34E /* FontExtension.swift in Sources */,
 				9554A6DA2A98F35A00DF48E4 /* ComplimentSelfView.swift in Sources */,
 				9554A6BB2A963D0D00DF48E4 /* MockData.swift in Sources */,
 				9503CB762A998986001BA150 /* CharacterCustomView.swift in Sources */,

@@ -16,7 +16,8 @@ struct JobSpaceView: View {
                 HeaderView()
                 toggleView
                 Text("다양한 감정을 초등학생에게\n아름답게 전달하는 사람")
-                    .description(.white, 19)
+                    .description()
+                    .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 Spacer()
                 CustomTabView()
