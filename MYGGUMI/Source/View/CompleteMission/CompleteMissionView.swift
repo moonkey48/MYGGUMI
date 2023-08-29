@@ -14,6 +14,7 @@ struct CompleteMissionView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 Image("mission_complete")
                     .padding(.bottom, 20)

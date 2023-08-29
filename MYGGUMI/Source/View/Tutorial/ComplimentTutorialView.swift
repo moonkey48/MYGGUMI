@@ -16,6 +16,7 @@ struct ComplimentTutorialView: View {
         BackgroundView { geo in
             VStack(spacing: 0) {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                     .frame(height: 50)
                 ZStack {
@@ -32,6 +33,7 @@ struct ComplimentTutorialView: View {
                             if index == 0 {
                                 NavigationLink {
                                     ComplimentFriendView()
+                                        .navigationBarBackButtonHidden()
                                 } label: {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 25, style: .continuous)

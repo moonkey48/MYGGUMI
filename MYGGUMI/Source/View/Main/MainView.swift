@@ -74,21 +74,27 @@ struct MainView: View {
             }
             .navigationDestination(isPresented: $mainObservable.showComplimentFromMain) {
                 ComplimentMainView()
+                    .navigationBarBackButtonHidden()
             }
             .navigationDestination(isPresented: $mainObservable.showFindValueFromMain) {
                 FindValueMainView()
+                    .navigationBarBackButtonHidden()
             }
             .navigationDestination(isPresented: $mainObservable.showMissionFromMain) {
                 MissionPage()
+                    .navigationBarBackButtonHidden()
             }
             .navigationDestination(isPresented: $mainObservable.showSpaceFromMain) {
                 JobSpaceView()
+                    .navigationBarBackButtonHidden()
             }
             .navigationDestination(isPresented: $mainObservable.showChatFromMain) {
                 ChatWithGGUMI()
+                    .navigationBarBackButtonHidden()
             }
             .navigationDestination(isPresented: $mainObservable.showFriendListFromMain) {
                 FriendListView()
+                    .navigationBarBackButtonHidden()
             }
         }
         .accentColor(.white)

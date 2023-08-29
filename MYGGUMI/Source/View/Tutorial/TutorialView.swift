@@ -36,6 +36,7 @@ struct TutorialView: View {
             BackgroundView { geo in
                 VStack(spacing: 0) {
                     HeaderView()
+                        .frame(width: geo.size.width)
                     TopSection
                     // MARK: Modal
                     
@@ -86,6 +87,7 @@ struct TutorialView: View {
                 }
             }
         }
+        .accentColor(.white)
     }
 }
 
@@ -188,6 +190,7 @@ extension TutorialView {
             case .mission2:
                 NavigationLink {
                     ComplimentTutorialView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     ZStack {
                         Image("icon_tab1")
@@ -229,7 +232,7 @@ extension TutorialView {
                 Image("character_basic")
                     .padding(.bottom, 20)
                 Text("이곳이 여러분의 메인페이지에요!")
-                    .description()
+                    .normalDescription()
             }
         }
         .ignoresSafeArea()
@@ -269,10 +272,11 @@ extension TutorialView {
                     Image("character_findValue1")
                         .offset(x: -140)
                     Image("finger_down")
-                        .offset(x: 70, y: -10)
+                        .offset(x: 75, y: -17)
+                    
                 }
                 Text("‘저와의 대화’와 ‘일상공유’를 통해\n여러분이 무엇을 중요하게\n생각하는지 알 수 있어요!")
-                    .description()
+                    .normalDescription()
                     .multilineTextAlignment(.center)
             }
         }
@@ -292,10 +296,10 @@ extension TutorialView {
                     Image("character_cooker")
                         .offset(x: -140)
                     Image("finger_down")
-                        .offset(x: 70, y: -10)
+                        .offset(x: 75, y: -31)
                 }
                 Text("이곳에서 가치에 따른\n나만의 캐릭터도 확인해보세요!")
-                    .description()
+                    .normalDescription()
                     .multilineTextAlignment(.center)
             }
         }
@@ -333,7 +337,7 @@ extension TutorialView {
             Color.black.opacity(0.5)
             VStack {
                 Text("또, 친구들과의 칭찬을 통해 여러분이\n무엇을 잘하는지 확인해보세요!")
-                    .description()
+                    .normalDescription()
                     .multilineTextAlignment(.center)
                 ZStack {
                     Image("finger_top_bling")
@@ -362,7 +366,7 @@ extension TutorialView {
                         .offset(x: 140)
                 }
                 Text("‘칭찬하기’와 ‘가치찾기’를 통해\n나의 동사형 꿈이 나오면")
-                    .description()
+                    .normalDescription()
                     .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 130)
@@ -383,7 +387,7 @@ extension TutorialView {
                 Spacer()
                     .frame(height: 240)
                 Text("여러분의 직업우주가 생기고\n직업검색도 가능합니다")
-                    .description()
+                    .normalDescription()
                     .multilineTextAlignment(.center)
                 ZStack {
                     Image("finger_top_right_bling")
@@ -408,7 +412,7 @@ extension TutorialView {
                 Spacer()
                     .frame(height: 220)
                 Text("여러분의 직업우주가 생기고\n직업검색도 가능합니다")
-                    .description()
+                    .normalDescription()
                     .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 60)
@@ -431,7 +435,7 @@ extension TutorialView {
                 Image("character_handsUp")
                     .padding(.bottom, 20)
                 Text("더욱 자세한건\n‘오늘의 미션’을 통해\n알아보세요!")
-                    .description()
+                    .normalDescription()
                     .multilineTextAlignment(.center)
             }
             Image("finger_down_left")

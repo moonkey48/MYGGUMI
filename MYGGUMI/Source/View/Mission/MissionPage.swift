@@ -22,6 +22,7 @@ struct MissionPage: View {
             BackgroundView { geo in
                 VStack(spacing: 0) {
                     HeaderView()
+                        .frame(width: geo.size.width)
                     Spacer()
                         .frame(height: 50)
                     ZStack {
@@ -83,15 +84,19 @@ struct MissionPage: View {
             }
             .navigationDestination(isPresented: $missionObservable.showComplimentView) {
                 ComplimentMainView()
+                    .navigationBarBackButtonHidden()
             }
             .navigationDestination(isPresented: $missionObservable.showTalkView) {
                 ChatWithGGUMI()
+                    .navigationBarBackButtonHidden()
             }
             .navigationDestination(isPresented: $missionObservable.showShareLifeView) {
                 ShareWithGGUMI()
+                    .navigationBarBackButtonHidden()
             }
             .navigationDestination(isPresented: $missionObservable.showExperienceJobView) {
                 JobSpaceView()
+                    .navigationBarBackButtonHidden()
             }
         
     }

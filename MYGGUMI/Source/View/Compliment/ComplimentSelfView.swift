@@ -19,6 +19,7 @@ struct ComplimentSelfView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 
                 Spacer()
                 CustomTabView()

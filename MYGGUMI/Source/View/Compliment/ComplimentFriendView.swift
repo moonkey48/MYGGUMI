@@ -45,7 +45,9 @@ struct ComplimentFriendView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 toggleView
+                    .frame(width: geo.size.width)
                 Spacer()
                 CustomTabView()
             }
@@ -82,7 +84,6 @@ extension ComplimentFriendView {
                 default:
                     changeFriend.toggle()
                 }
-                
             } label: {
                 Image(changeFriend ? "mission_toggle_on" : "mission_toggle_off")
             }

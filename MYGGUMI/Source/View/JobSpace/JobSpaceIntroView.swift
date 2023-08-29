@@ -19,6 +19,7 @@ struct JobSpaceIntroView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 Image("character_basic")
                     .padding(.bottom, 20)

@@ -27,11 +27,13 @@ struct FriendListView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 VStack(spacing: -25) {
                     ForEach(0..<dummyFriendList.count, id: \.self) { index in
                         NavigationLink {
                             FriendDetailView()
+                                .navigationBarBackButtonHidden()
                         } label: {
                             HStack(spacing: 0) {
                                 Image("profile\(index + 1)")

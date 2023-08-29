@@ -12,6 +12,7 @@ struct CharacterAICompleteView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 Image("character_default")
                 ZStack {

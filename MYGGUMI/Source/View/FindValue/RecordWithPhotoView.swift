@@ -22,6 +22,7 @@ struct RecordWithPhotoView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 VStack(spacing: 30) {
                     Text("10.25 Fri")
@@ -83,11 +84,13 @@ struct RecordWithPhotoView: View {
                         Spacer()
                         NavigationLink {
                             CalenderView()
+                                .navigationBarBackButtonHidden()
                         } label: {
                             RectangleView(width: 100, height: 40, text: "작성완료")
                         }
                     }
                     .padding(.horizontal, 25)
+                    .frame(width: geo.size.width)
                     
                 }
                 .multilineTextAlignment(.center)

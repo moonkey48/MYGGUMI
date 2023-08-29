@@ -10,10 +10,12 @@ import SwiftUI
 struct ComplimentCompleteView: View {
     @ObservedObject private var missionObservable = MissionObservable.shared
     @ObservedObject private var mainObservable = MainObservable.shared
+    @ObservedObject private var tutorialStateObservable = TutorialStateObservable.shared
     var body: some View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 Image("mission_complete")
                     .padding(.bottom, 20)
@@ -31,6 +33,12 @@ struct ComplimentCompleteView: View {
                 missionObservable.showComplimentView = false
                 if mainObservable.showComplimentFromMain {
                     mainObservable.showComplimentFromMain = false
+                }
+                switch tutorialStateObservable.mainState {
+                case .tutorialEnded:
+                    return
+                default:
+                    tutorialStateObservable.mainState = .tutorialEnded
                 }
             }
         }

@@ -12,6 +12,7 @@ struct CharacterAILoadingView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 ZStack {
                     Image("textBG_circle")

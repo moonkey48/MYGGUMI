@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject private var basicDataObservable = BasicDataObservable.shared
     var body: some View {
         HStack(spacing: 0) {
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                Image("chevron_left")
+                    .padding(.leading, 10)
+            }
             Spacer()
             Image("main_coin")
                 .padding(.trailing, 10)

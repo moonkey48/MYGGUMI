@@ -12,6 +12,7 @@ struct ShareWithGGUMI: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 VStack {
                     Text("10.25 Fri")
@@ -20,11 +21,13 @@ struct ShareWithGGUMI: View {
                     HStack(spacing: 25) {
                         NavigationLink {
                             RecordWithPhotoView()
+                                .navigationBarBackButtonHidden()
                         } label: {
                             RectangleView(width: 130, height: 115, text: "사진으로\n기록")
                         }
                         NavigationLink {
                             RecordWithDiaryView()
+                                .navigationBarBackButtonHidden()
                         } label: {
                             RectangleView(width: 130, height: 115, text: "일기로\n기록")
                         }
@@ -32,6 +35,7 @@ struct ShareWithGGUMI: View {
                     .padding(.bottom, 10)
                     NavigationLink {
                         RecordWithAIView()
+                            .navigationBarBackButtonHidden()
                     } label: {
                         RectangleView(width: 285, height: 115, text: "AI꾸미로 기록")
                     }

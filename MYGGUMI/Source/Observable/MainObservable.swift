@@ -18,4 +18,13 @@ final class MainObservable: ObservableObject {
     @Published var showSpaceFromMain = false
     @Published var showChatFromMain = false
     @Published var showFriendListFromMain = false
+    
+    func resetNavigation(){
+        showComplimentFromMain = false
+        showFindValueFromMain = false
+        showMissionFromMain = false
+        showSpaceFromMain = false
+        showChatFromMain = false
+        showFriendListFromMain = false
+    }
 }

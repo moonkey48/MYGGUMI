@@ -56,7 +56,7 @@ struct OnboardingView: View {
                         Text("다음")
                             .normalDescription(.white, 23)
                     }
-                    .padding(.trailing, 40)
+                    .padding(.trailing, 70)
                 }
                 .frame(width: geo.size.width)
                 Spacer()

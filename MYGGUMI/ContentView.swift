@@ -7,26 +7,23 @@
 
 import SwiftUI
 
-enum MainState {
-    case login
-    case onboarding
-    case tutorial
-    case complimentTutorial
-}
+
 
 struct ContentView: View {
-    @State private var mainState: MainState = .login
+    @StateObject private var tutorialStateObservable = TutorialStateObservable.shared
     
     var body: some View {
-        switch mainState {
+        switch tutorialStateObservable.mainState {
         case .login:
-            LoginView(mainState: $mainState)
+            LoginView(mainState: $tutorialStateObservable.mainState)
         case .onboarding:
-            OnboardingView(mainState: $mainState)
+            OnboardingView(mainState: $tutorialStateObservable.mainState)
         case .tutorial:
-            TutorialView(mainState: $mainState)
+            TutorialView(mainState: $tutorialStateObservable.mainState)
         case .complimentTutorial:
-            TutorialView(mainState: $mainState)
+            TutorialView(mainState: $tutorialStateObservable.mainState)
+        case .tutorialEnded:
+            MainView()
         }
     }
 }

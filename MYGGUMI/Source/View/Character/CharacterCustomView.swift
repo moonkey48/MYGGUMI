@@ -40,6 +40,7 @@ struct CharacterCustomView: View {
             CharacterImageView
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 
                 VStack(spacing: 0) {
@@ -69,6 +70,8 @@ struct CharacterCustomView: View {
                             .padding(.top, 20)
                     }
                 }
+                .padding()
+                .frame(width: geo.size.width)
                 CustomTabView()
             }
         }

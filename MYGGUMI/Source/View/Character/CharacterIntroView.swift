@@ -12,6 +12,7 @@ struct CharacterIntroView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 TopImageView
                 ZStack {
@@ -22,6 +23,7 @@ struct CharacterIntroView: View {
                 }
                 NavigationLink {
                     CharacterAIView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     RectangleView(width: 210, height: 96, text: "캐릭터 설정하기")
                 }

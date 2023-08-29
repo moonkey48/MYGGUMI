@@ -14,6 +14,7 @@ struct RecordWithDiaryView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 VStack(spacing: 40) {
                     HStack {
                         Spacer()
@@ -35,12 +36,14 @@ struct RecordWithDiaryView: View {
                                         Spacer()
                                     }
                                 }
+                                .foregroundColor(.white)
                             
                             Spacer()
                             HStack {
                                 Spacer()
                                 NavigationLink {
                                     CalenderView()
+                                        .navigationBarBackButtonHidden()
                                 } label: {
                                     RectangleView(width: 100, height: 40, text: "작성완료")
                                 }
@@ -49,6 +52,7 @@ struct RecordWithDiaryView: View {
                         .padding(30)
                     }
                 }
+                .frame(width: geo.size.width)
                 Spacer()
                 CustomTabView()
             }

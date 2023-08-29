@@ -16,6 +16,7 @@ enum AIViewState: CaseIterable {
 
 struct CharacterAIView: View {
     @ObservedObject private var characterObservable = CharacterObservable.shared
+    @ObservedObject private var mainObservable = MainObservable.shared
     @State private var aiViewState: AIViewState = .notMaking
     @State private var isCamera = false
     
@@ -23,6 +24,7 @@ struct CharacterAIView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 switch aiViewState {
                 case .notMaking:
@@ -85,19 +87,21 @@ extension CharacterAIView {
                     .description()
             }
             Button {
-                // TODO: go to home
+                mainObservable.resetNavigation()
             } label: {
                 RectangleView(width: 228, height: 65, text: "홈으로")
             }
             if characterObservable.customComplete {
-                NavigationLink {
-                    // TODO: navigation
+                Button {
+                    mainObservable.resetNavigation()
+                    mainObservable.showFriendListFromMain = true
                 } label: {
                     RectangleView(width: 228, height: 65, text: "친구 프로필 구경가기")
                 }
             } else {
                 NavigationLink {
                     CharacterCustomView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     RectangleView(width: 228, height: 65, text: "캐릭터 세부수정 하러가기")
                 }

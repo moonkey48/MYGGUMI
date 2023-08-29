@@ -49,6 +49,7 @@
 		95592FC02A9C8330007B3C98 /* SB 어그로OTF Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95592FBF2A9C8330007B3C98 /* SB 어그로OTF Bold.otf */; };
 		95592FC52A9C853E007B3C98 /* SB 어그로OTF L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95592FC32A9C853E007B3C98 /* SB 어그로OTF L.otf */; };
 		95592FC62A9C853E007B3C98 /* SB 어그로OTF M.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95592FC42A9C853E007B3C98 /* SB 어그로OTF M.otf */; };
+		95592FC82A9CAF0C007B3C98 /* TutorialStateObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95592FC72A9CAF0C007B3C98 /* TutorialStateObservable.swift */; };
 		9581DDDC2A8CC2F000FAFA48 /* MYGGUMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */; };
 		9581DDDE2A8CC2F000FAFA48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */; };
 		9581DDE02A8CC2F100FAFA48 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581DDDF2A8CC2F100FAFA48 /* Base.xcassets */; };
@@ -108,6 +109,7 @@
 		95592FBF2A9C8330007B3C98 /* SB 어그로OTF Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SB 어그로OTF Bold.otf"; sourceTree = "<group>"; };
 		95592FC32A9C853E007B3C98 /* SB 어그로OTF L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SB 어그로OTF L.otf"; sourceTree = "<group>"; };
 		95592FC42A9C853E007B3C98 /* SB 어그로OTF M.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SB 어그로OTF M.otf"; sourceTree = "<group>"; };
+		95592FC72A9CAF0C007B3C98 /* TutorialStateObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStateObservable.swift; sourceTree = "<group>"; };
 		9581DDD82A8CC2F000FAFA48 /* MYGGUMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGGUMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581DDDB2A8CC2F000FAFA48 /* MYGGUMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYGGUMIApp.swift; sourceTree = "<group>"; };
 		9581DDDD2A8CC2F000FAFA48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				9554A6D52A98DC2400DF48E4 /* MissionObservable.swift */,
 				9503CB792A99B0A9001BA150 /* CharacterObservable.swift */,
 				9503CB802A99DC45001BA150 /* MainObservable.swift */,
+				95592FC72A9CAF0C007B3C98 /* TutorialStateObservable.swift */,
 			);
 			path = Observable;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				959862702A937DCC0047E1D5 /* OnboardingView.swift in Sources */,
 				9503CB7A2A99B0A9001BA150 /* CharacterObservable.swift in Sources */,
 				9554A6B42A9636A600DF48E4 /* ComplimentMainView.swift in Sources */,
+				95592FC82A9CAF0C007B3C98 /* TutorialStateObservable.swift in Sources */,
 				9503CB782A999CD5001BA150 /* BackDropBlurView.swift in Sources */,
 				9503CB832A9A374C001BA150 /* JobSpaceIntroView.swift in Sources */,
 				9554A6AB2A95E06400DF48E4 /* BasicDataObservable.swift in Sources */,

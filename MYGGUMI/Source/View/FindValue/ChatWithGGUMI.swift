@@ -21,6 +21,7 @@ struct ChatWithGGUMI: View {
     let chatStateList = ChatState.allCases
     @ObservedObject private var missionObservable = MissionObservable.shared
     @ObservedObject private var mainObservable = MainObservable.shared
+    @ObservedObject private var basicDataObservable = BasicDataObservable.shared
     @FocusState private var focusField: Field?
     @State private var chatStateIndex = 0
     @State private var currentChatState: ChatState = .textNotSubmited
@@ -48,6 +49,7 @@ struct ChatWithGGUMI: View {
                 }
                 VStack(spacing: 0){
                     HeaderView()
+                        .frame(width: geo.size.width)
                     switch currentChatState {
                     case .textNotSubmited:
                         ChatView
@@ -59,6 +61,7 @@ struct ChatWithGGUMI: View {
                         NavigationToHomeOrCharacterView
                     }
                 }
+                .frame(width: geo.size.width)
             }
             .onAppear {
                 focusField = .chat
@@ -122,7 +125,6 @@ extension ChatWithGGUMI {
                     .frame(width: 262, height: 32)
                     .background(Color(.lightGray))
                     .cornerRadius(10)
-                    
                     Spacer()
                         .frame(width: 10)
                 }
@@ -130,15 +132,16 @@ extension ChatWithGGUMI {
             Spacer()
             HStack(spacing: 0) {
                 TextField(text: $currentText) {
-                    Text("")
+                    Text("꾸미에게 하고 싶은 말을 입력하세요")
                 }
                 .focused($focusField, equals: .chat)
+                .frame(width: .infinity, height: 40)
                 .onSubmit {
                     submitedText = currentText
                     currentText = ""
                 }
+                
             }
-            .frame(width: .infinity, height: 20)
             .padding(.horizontal, 20)
             .background(.white)
         }
@@ -161,6 +164,7 @@ extension ChatWithGGUMI {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 currentChatState = chatStateList[chatStateIndex + 1]
                 chatStateIndex += 1
+                basicDataObservable.coin += 5
             }
         }
     }
@@ -212,8 +216,9 @@ extension ChatWithGGUMI {
                     } label: {
                         RectangleView(width: 170, height: 48, text: "홈으로")
                     }
-                    Button {
-                        // TODO: Navigation To Character
+                    NavigationLink {
+                        CharacterIntroView()
+                            .navigationBarBackButtonHidden()
                     } label: {
                         RectangleView(width: 170, height: 48, text: "나만의 캐릭터 꾸미기")
                     }

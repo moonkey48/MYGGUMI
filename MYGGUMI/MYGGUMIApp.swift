@@ -12,7 +12,7 @@ struct MYGGUMIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            JobSpaceView()
         }
     }
 }

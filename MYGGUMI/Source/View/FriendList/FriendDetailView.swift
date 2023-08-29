@@ -12,12 +12,14 @@ struct FriendDetailView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 VStack(spacing: 0) {
                     Text("유마이")
                         .padding(.bottom, 20)
                     NavigationLink {
                         CharacterCustomView()
+                            .navigationBarBackButtonHidden()
                     } label: {
                         Image("profile_full")
                     }

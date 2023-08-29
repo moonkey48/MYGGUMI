@@ -16,6 +16,7 @@ struct CalenderView: View {
         BackgroundView { geo in
             VStack {
                 HeaderView()
+                    .frame(width: geo.size.width)
                 Spacer()
                 DatePicker(
                     "Start Date",
@@ -38,6 +39,7 @@ struct CalenderView: View {
                             missionObservable.missionList[2].isComplete = true
                             missionObservable.showShareLifeView = false
                         }
+                        .navigationBarBackButtonHidden()
                     } label: {
                         RectangleView(width: 100, height: 40, text: "선택완료")
                     }
@@ -46,6 +48,8 @@ struct CalenderView: View {
                 Spacer()
                 CustomTabView()
             }
+            .frame(width: geo.size.width)
+            .tint(.black)
         }
     }
 }
