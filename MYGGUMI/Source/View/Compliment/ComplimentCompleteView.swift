@@ -31,9 +31,8 @@ struct ComplimentCompleteView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 missionObservable.missionList[0].isComplete = true
                 missionObservable.showComplimentView = false
-                if mainObservable.showComplimentFromMain {
-                    mainObservable.showComplimentFromMain = false
-                }
+                mainObservable.resetNavigation()
+                mainObservable.showMissionFromMain = true
                 switch tutorialStateObservable.mainState {
                 case .tutorialEnded:
                     return

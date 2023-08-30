@@ -25,6 +25,7 @@ let clothList = [
 struct CharacterCustomView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject private var characterObservable = CharacterObservable.shared
+    @ObservedObject private var missionObservable = MissionObservable.shared
     @State private var customOptions: CustomOptions = .face
     @State private var selectedFace = ""
     @State private var selectedStar = ""
@@ -62,6 +63,7 @@ struct CharacterCustomView: View {
                     }
                     
                     Button {
+                        missionObservable.isCharacterCustomCompleted = true
                         characterObservable.customComplete = true
                         presentationMode.wrappedValue.dismiss()
                     } label: {

@@ -19,6 +19,7 @@ final class MainObservable: ObservableObject {
     @Published var showChatFromMain = false
     @Published var showFriendListFromMain = false
     
+    
     func resetNavigation(){
         showComplimentFromMain = false
         showFindValueFromMain = false
