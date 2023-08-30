@@ -341,7 +341,7 @@ extension TutorialView {
                     .multilineTextAlignment(.center)
                 ZStack {
                     Image("finger_top_bling")
-                        .offset(x: -70, y: 80)
+                        .offset(x: -80, y: 90)
                     Image("character_rough")
                         .offset(x: 140)
                 }
@@ -356,12 +356,13 @@ extension TutorialView {
     
     // Dream1
     var Dream1View: some View {
+        
         ZStack {
             Color.black.opacity(0.5)
             VStack {
                 ZStack {
                     Image("finger_top_right_bling")
-                        .offset(x: -90, y: 60)
+                        .offset(x: -90, y: 65)
                     Image("character_rough")
                         .offset(x: 140)
                 }
@@ -391,7 +392,7 @@ extension TutorialView {
                     .multilineTextAlignment(.center)
                 ZStack {
                     Image("finger_top_right_bling")
-                        .offset(x: -60, y: 80)
+                        .offset(x: -55, y: 80)
                     Image("character_eye")
                         .offset(x: 140, y: 30)
                 }
@@ -418,7 +419,7 @@ extension TutorialView {
                     .frame(height: 60)
                 Image("character_familly")
                 Image("finter_down_right")
-                    .offset(x: 120, y: 40)
+                    .offset(x: 126, y: 35)
             }
         }
         .ignoresSafeArea()
@@ -439,7 +440,7 @@ extension TutorialView {
                     .multilineTextAlignment(.center)
             }
             Image("finger_down_left")
-                .offset(x:-100, y:260)
+                .offset(x:-112, y:266)
         }
         .ignoresSafeArea()
         .onTapGesture {

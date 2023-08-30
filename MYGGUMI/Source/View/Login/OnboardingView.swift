@@ -106,7 +106,9 @@ extension OnboardingView {
             Text("사실 꿈이란, 단순한 직업이 아닌\n인생의 목표를 의미해요!")
                 .normalDescription(.white, 15)
             .multilineTextAlignment(.center)
+            Spacer()
         }
+        .frame(height: 250)
     }
     private var DescriptionView3: some View {
         VStack {

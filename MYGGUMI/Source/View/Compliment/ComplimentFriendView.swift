@@ -187,12 +187,13 @@ extension ComplimentFriendView {
                     .offset(x: -60)
                 VStack {
                     Image("finger_up")
-                        .offset(x: 50,y:-180)
+                        .offset(x: 48,y:-184)
                     Text("여기를 누르면,\n원하는 친구에게\n칭찬을 할 수 있어요!")
                         .description()
                         .multilineTextAlignment(.center)
                         .offset(y:-50)
                 }
+                
             }
         }
         .ignoresSafeArea()
