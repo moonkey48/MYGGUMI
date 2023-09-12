@@ -227,7 +227,7 @@ extension TutorialView {
     // Intro
     var IntroStateView: some View {
         ZStack {
-            Color.black.opacity(0.5)
+            Color.black.opacity(0.7)
             VStack {
                 Image("character_basic")
                     .padding(.bottom, 20)

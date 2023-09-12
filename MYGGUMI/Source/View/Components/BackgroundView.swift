@@ -38,7 +38,7 @@ struct BackgroundView<Content: View>: View {
             }
         }
         .onAppear {
-//            withAnimation(.easeIn(duration: 10).repeatForever()) {
+//            withAnimation(.easeIn(duration: 20).repeatForever()) {
 //                xTop = -50
 //                xBottom = 100
 //            }

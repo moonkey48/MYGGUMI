@@ -64,7 +64,7 @@ struct JobExperiencedView: View {
         }
         .onAppear {
             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-                time += 1
+                time += 0.1
                 sinusA = sin(time * Double.pi / 180)
                 cosinusA = cos(time * Double.pi / 180)
                 let gapTimeB = time + timeGapB
